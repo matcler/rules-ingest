@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostplaier.local/schemas/rules-ingest/atoms.schema.json",
+  "title": "Rules-Ingest Atom",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "pack",
+    "atomType",
+    "appliesTo",
+    "enforcement"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Schema semver of this atom format (not SRD version)."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.:-]+$",
+      "description": "Stable atom id (lowercase)."
+    },
+    "pack": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$",
+      "description": "Feature pack / module gate (e.g. SRD_COMBAT, SRD_SPELLS)."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "corpus": {
+          "type": "string",
+          "description": "e.g. SRD_5E_5.1"
+        },
+        "ref": {
+          "type": "string",
+          "description": "Short reference (page/section id), no long text."
+        }
+      }
+    },
+    "atomType": {
+      "type": "string",
+      "enum": [
+        "REQUIRES_PHASE",
+        "REQUIRES_COMBAT_ACTIVE",
+        "REQUIRES_INITIATIVE_SET",
+        "REQUIRES_YOUR_TURN",
+        "REQUIRES_TARGET",
+        "REQUIRES_RANGE_MAX",
+        "REQUIRES_ADJACENT_TARGET",
+        "REQUIRES_LINE_OF_SIGHT",
+        "FORBIDS_TARGET_SELF",
+        "FORBIDS_TARGET_TYPE",
+        "REQUIRES_EQUIPMENT",
+        "FORBIDS_DESTINATION_OCCUPIED"
+      ],
+      "description": "Atomic legality constraint."
+    },
+    "appliesTo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eventType"
+      ],
+      "properties": {
+        "eventType": {
+          "type": "string",
+          "enum": [
+            "ACTION_PROPOSED",
+            "TURN_ENDED",
+            "ADVANCE_TURN"
+          ]
+        },
+        "actionType": {
+          "type": "string",
+          "description": "Optional filter when eventType=ACTION_PROPOSED (e.g. MOVE, ATTACK, SPELL...)",
+          "pattern": "^[A-Z_]+$"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "description": "Atom-specific parameters. Shape depends on atomType.",
+      "additionalProperties": true
+    },
+    "enforcement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "denyCode",
+        "detailsReason",
+        "ifDataMissing"
+      ],
+      "properties": {
+        "denyCode": {
+          "type": "string",
+          "enum": [
+            "INVALID_MOVE",
+            "TARGET_NOT_ADJACENT",
+            "WRONG_PHASE",
+            "COMBAT_NOT_ACTIVE",
+            "INITIATIVE_NOT_SET",
+            "NOT_YOUR_TURN",
+            "UNKNOWN_EVENT"
+          ],
+          "description": "Must map to existing RE ReasonCode (contract frozen)."
+        },
+        "detailsReason": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]+$",
+          "description": "Short machine-readable reason stored in ReDecision.details.reason"
+        },
+        "ifDataMissing": {
+          "type": "string",
+          "enum": [
+            "SKIP",
+            "DENY"
+          ],
+          "description": "Policy when required data is missing from snapshot/event."
+        },
+        "detailsTemplate": {
+          "type": "object",
+          "description": "Optional extra details keys to add (no free text).",
+          "additionalProperties": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_-]+$"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 240,
+      "description": "Short internal note. Avoid copying SRD text."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "STABLE",
+        "DEPRECATED"
+      ],
+      "default": "DRAFT"
+    }
+  }
+}

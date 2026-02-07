@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "srd.spell.ray_of_enfeeblement",
+  "kind": "spell",
+  "name": "Ray of Enfeeblement",
+  "pack": "SRD_SPELLS",
+  "constraints": [
+    {
+      "type": "requires_action_cost",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL",
+      "actionCost": "ACTION"
+    },
+    {
+      "type": "requires_target",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL"
+    },
+    {
+      "type": "requires_range_max",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL",
+      "maxFeet": 60
+    }
+  ]
+}

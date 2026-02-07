@@ -2,7 +2,6 @@
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 from typing import Iterable, List, Tuple, Optional
@@ -16,7 +15,7 @@ def eprint(*args: object) -> None:
 
 
 def load_text(path: Path) -> str:
-    return path.read_text(encoding="utf-8")
+    return path.read_text(encoding="utf-8-sig")
 
 
 def load_json(path: Path) -> object:
@@ -24,7 +23,7 @@ def load_json(path: Path) -> object:
 
 
 def build_registry(repo_root: Path) -> Registry:
-    \"\"\"Build a registry from all schemas in ./schemas so  references can resolve.\"\"\"
+    """Build a registry from all schemas in ./schemas so $id references can resolve."""
     schemas_dir = repo_root / "schemas"
     registry = Registry()
 
@@ -32,9 +31,9 @@ def build_registry(repo_root: Path) -> Registry:
         for p in schemas_dir.rglob("*.json"):
             try:
                 doc = load_json(p)
-                if isinstance(doc, dict) and isinstance(doc.get("\"), str):
+                if isinstance(doc, dict) and isinstance(doc.get("$id"), str):
                     res = Resource.from_contents(doc)
-                    registry = registry.with_resource(doc["\"], res)
+                    registry = registry.with_resource(doc["$id"], res)
             except Exception as ex:
                 eprint(f"[WARN] Unable to index schema '{p}': {ex}")
 
@@ -46,18 +45,19 @@ def collect_files(paths: List[str]) -> List[Path]:
     for raw in paths:
         p = Path(raw)
         if p.is_dir():
-            out.extend([x for x in p.rglob("*") if x.is_file() and x.suffix.lower() in (".json", ".jsonl")])
+            out.extend(
+                [x for x in p.rglob("*") if x.is_file() and x.suffix.lower() in (".json", ".jsonl")]
+            )
         elif p.is_file():
             out.append(p)
         else:
-            # support glob-like input via shell expansion; if not expanded, warn
             eprint(f"[WARN] Path not found: {raw}")
     return out
 
 
 def iter_jsonl(path: Path) -> Iterable[Tuple[int, object]]:
-    \"\"\"Yield (line_number, parsed_object). Ignores empty/whitespace-only lines.\"\"\"
-    for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    """Yield (line_number, parsed_object). Ignores empty/whitespace-only lines."""
+    for i, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), start=1):
         if not line.strip():
             continue
         yield i, json.loads(line)
@@ -121,8 +121,6 @@ def main(argv: Optional[List[str]] = None) -> int:
                 for line_no, obj in iter_jsonl(f):
                     label = f"{f}#L{line_no}"
                     all_errors.extend(validate_one(validator, obj, label))
-            else:
-                continue
         except json.JSONDecodeError as ex:
             all_errors.append(f"{f}: JSON parse error: {ex}")
         except Exception as ex:

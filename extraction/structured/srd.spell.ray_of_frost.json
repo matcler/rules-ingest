@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "srd.spell.ray_of_frost",
+  "kind": "spell",
+  "name": "Ray of Frost",
+  "pack": "SRD_SPELLS",
+  "constraints": [
+    {
+      "type": "requires_action_cost",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL",
+      "actionCost": "ACTION"
+    },
+    {
+      "type": "requires_target",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL"
+    },
+    {
+      "type": "requires_range_max",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL",
+      "maxFeet": 60
+    }
+  ],
+  "extraction": {
+    "method": "llm",
+    "model": "codex",
+    "date": "2026-02-07"
+  }
+}

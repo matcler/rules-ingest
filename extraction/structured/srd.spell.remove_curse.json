@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "srd.spell.remove_curse",
+  "kind": "spell",
+  "name": "Remove Curse",
+  "pack": "SRD_SPELLS",
+  "constraints": [
+    {
+      "type": "requires_action_cost",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL",
+      "actionCost": "ACTION"
+    },
+    {
+      "type": "requires_target",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL"
+    },
+    {
+      "type": "requires_adjacent_target",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "SPELL"
+    }
+  ],
+  "extraction": {
+    "method": "llm",
+    "model": "codex",
+    "date": "2026-02-07"
+  }
+}

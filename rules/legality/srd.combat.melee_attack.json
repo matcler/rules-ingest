@@ -2,7 +2,7 @@
     "schemaVersion": "1.0.0",
     "id": "srd.combat.melee_attack",
     "scenario": "SCENARIO_1",
-    "kind": "legality",
+    "kind": "legality_rule",
     "name": "Melee Attack (Combat)",
     "pack": "SRD_COMBAT",
     "source": {
@@ -40,3 +40,4 @@
         }
     ]
 }
+

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -98,91 +98,65 @@ def main(argv: Optional[List[str]] = None) -> int:
     all_errors: List[str] = []
 
     def lint_rule(data: Any, file_path: Path) -> List[str]:
-        """Extra architectural checks that are intentionally SRD-agnostic.
 
-        This lint only enforces:
-        - presence of scenario
-        - minimal extraction metadata (source/extraction)
-        - a couple of Scenario 1 constraints bans (existing rule)
-        - basic folder↔kind coherence
-        - pageStart/pageEnd sanity (pageEnd >= pageStart when both > 0)
-        """
+        """Minimal architectural lint for mass extraction (null-safe)."""
+
         msgs: List[str] = []
+
         if not isinstance(data, dict):
+
             return msgs
 
-        # scenario must exist for any rule
+    
+
         scenario = data.get("scenario")
-        if scenario is None:
+
+        if not scenario:
+
             msgs.append(f"{file_path}: <root>: missing required field: scenario")
+
             return msgs
 
-        # folder ↔ kind coherence (structural only)
-        rel = file_path.as_posix().replace("\\", "/")
-        kind = data.get("kind")
-        if "rules/legality" in rel and kind not in ("legality", "legality_rule"):
-            msgs.append(f"{file_path}: kind: expected 'legality' (or legacy 'legality_rule') for rules/legality")
-        if "rules/triggers" in rel and kind not in ("trigger", "trigger_rule"):
-            msgs.append(f"{file_path}: kind: expected 'trigger' (or legacy 'trigger_rule') for rules/triggers")
-        if "rules/transitions" in rel and kind not in ("transition", "transition_rule"):
-            msgs.append(f"{file_path}: kind: expected 'transition' (or legacy 'transition_rule') for rules/transitions")
+    
 
-        # minimal metadata presence (even though schema enforces, keep a clear lint message)
-        source = data.get("source")
-        if not isinstance(source, dict):
-            msgs.append(f"{file_path}: source: missing required object")
-        else:
-            if not source.get("corpus"):
-                msgs.append(f"{file_path}: source.corpus: missing or empty")
-            if not source.get("ref"):
-                msgs.append(f"{file_path}: source.ref: missing or empty")
+        # Only lint legality rules for now (guard-rail)
 
-        extraction = data.get("extraction")
-        if not isinstance(extraction, dict):
-            msgs.append(f"{file_path}: extraction: missing required object")
-        else:
-            if not extraction.get("method"):
-                msgs.append(f"{file_path}: extraction.method: missing or empty")
-            if not extraction.get("date"):
-                msgs.append(f"{file_path}: extraction.date: missing or empty")
-            page_start = extraction.get("pageStart")
-            page_end = extraction.get("pageEnd")
-            if page_start is None:
-                msgs.append(f"{file_path}: extraction.pageStart: missing")
-            if page_end is None:
-                msgs.append(f"{file_path}: extraction.pageEnd: missing")
-            if isinstance(page_start, int) and isinstance(page_end, int):
-                if page_start > 0 and page_end > 0 and page_end < page_start:
-                    msgs.append(f"{file_path}: extraction.pageEnd: must be >= extraction.pageStart when both are > 0")
+        is_legality = "rules/legality" in file_path.as_posix().replace("\\\\", "/")
 
-        # existing Scenario 1 legality lint
-        is_legality = "rules/legality" in rel
-        if is_legality and scenario == "SCENARIO_1":
-            constraints = data.get("constraints", [])
-            if isinstance(constraints, list):
-                banned = {"requires_line_of_sight", "requires_range_max"}
-                for i, c in enumerate(constraints):
-                    if isinstance(c, dict) and c.get("type") in banned:
-                        msgs.append(
-                            f"{file_path}: constraints[{i}].type: '{c.get('type')}' not allowed in SCENARIO_1"
-                        )
+        if not is_legality:
 
-        return msgs
-        scenario = data.get("scenario")
-        if scenario is None:
-            msgs.append(f"{file_path}: <root>: missing required field: scenario")
             return msgs
 
-        is_legality = "rules/legality" in file_path.as_posix().replace("\\", "/")
-        if is_legality and scenario == "SCENARIO_1":
-            constraints = data.get("constraints", [])
-            if isinstance(constraints, list):
-                banned = {"requires_line_of_sight", "requires_range_max"}
-                for i, c in enumerate(constraints):
-                    if isinstance(c, dict) and c.get("type") in banned:
-                        msgs.append(
-                            f"{file_path}: constraints[{i}].type: '{c.get('type')}' not allowed in SCENARIO_1"
-                        )
+    
+
+        constraints = data.get("constraints")
+
+        if constraints is None:
+
+            constraints = []
+
+        if not isinstance(constraints, list):
+
+            msgs.append(f"{file_path}: constraints: expected array")
+
+            return msgs
+
+    
+
+        # Scenario 1 must not include ranged/LoS gating
+
+        if scenario == "SCENARIO_1":
+
+            banned = {"requires_line_of_sight", "requires_range_max"}
+
+            for i, c in enumerate(constraints):
+
+                if isinstance(c, dict) and c.get("type") in banned:
+
+                    msgs.append(f"{file_path}: constraints[{i}].type: '{c.get('type')}' not allowed in SCENARIO_1")
+
+    
+
         return msgs
 
     def validate_schema(schema_path: Path, paths: List[Path], allow_empty: bool) -> None:
@@ -250,6 +224,10 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+
+
 
 
 

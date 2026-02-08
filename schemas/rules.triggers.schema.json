@@ -35,13 +35,7 @@
                 "SCENARIO_5"
             ]
         },
-        "kind": {
-            "type": "string",
-            "enum": [
-                "trigger",
-                "trigger_rule"
-            ]
-        },
+        "kind": { "type": "string", "enum": ["trigger_rule"] },
         "name": {
             "type": "string",
             "minLength": 1
@@ -167,3 +161,4 @@
         }
     }
 }
+

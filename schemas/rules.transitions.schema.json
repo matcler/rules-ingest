@@ -35,13 +35,7 @@
                 "SCENARIO_5"
             ]
         },
-        "kind": {
-            "type": "string",
-            "enum": [
-                "transition",
-                "transition_rule"
-            ]
-        },
+        "kind": { "type": "string", "enum": ["transition_rule"] },
         "name": {
             "type": "string",
             "minLength": 1
@@ -140,3 +134,4 @@
         }
     }
 }
+

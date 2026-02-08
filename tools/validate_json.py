@@ -1,10 +1,10 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Iterable, List, Tuple, Optional
+from typing import List, Optional, Iterable, Tuple, Any
 
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
@@ -97,6 +97,27 @@ def main(argv: Optional[List[str]] = None) -> int:
     registry = build_registry(repo_root)
     all_errors: List[str] = []
 
+    def lint_rule(data: Any, file_path: Path) -> List[str]:
+        msgs: List[str] = []
+        if not isinstance(data, dict):
+            return msgs
+        scenario = data.get("scenario")
+        if scenario is None:
+            msgs.append(f"{file_path}: <root>: missing required field: scenario")
+            return msgs
+
+        is_legality = "rules/legality" in file_path.as_posix().replace("\\", "/")
+        if is_legality and scenario == "SCENARIO_1":
+            constraints = data.get("constraints", [])
+            if isinstance(constraints, list):
+                banned = {"requires_line_of_sight", "requires_range_max"}
+                for i, c in enumerate(constraints):
+                    if isinstance(c, dict) and c.get("type") in banned:
+                        msgs.append(
+                            f"{file_path}: constraints[{i}].type: '{c.get('type')}' not allowed in SCENARIO_1"
+                        )
+        return msgs
+
     def validate_schema(schema_path: Path, paths: List[Path], allow_empty: bool) -> None:
         if not schema_path.exists():
             all_errors.append(f"[ERROR] Schema not found: {schema_path}")
@@ -109,12 +130,13 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         validator = Draft202012Validator(schema_doc, registry=registry)
         files = collect_files([str(p) for p in paths])
+
         if not files:
-            message = f"[WARN] No .json/.jsonl files found to validate for {schema_path}."
+            msg = f"[WARN] No .json/.jsonl files found to validate for {schema_path}."
             if allow_empty:
-                eprint(message)
+                eprint(msg)
                 return
-            all_errors.append(message)
+            all_errors.append(msg)
             return
 
         for f in files:
@@ -123,10 +145,12 @@ def main(argv: Optional[List[str]] = None) -> int:
                 if ext == ".json":
                     data = load_json(f)
                     all_errors.extend(validate_one(validator, data, str(f)))
+                    all_errors.extend(lint_rule(data, f))
                 elif ext == ".jsonl":
                     for line_no, obj in iter_jsonl(f):
                         label = f"{f}#L{line_no}"
                         all_errors.extend(validate_one(validator, obj, label))
+                        all_errors.extend(lint_rule(obj, f))
             except json.JSONDecodeError as ex:
                 all_errors.append(f"{f}: JSON parse error: {ex}")
             except Exception as ex:
@@ -159,4 +183,8 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+
+
 

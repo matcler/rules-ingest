@@ -1,232 +1,243 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ghostplaier.local/schemas/rules-ingest/rules.legality.schema.json",
-  "title": "Rules-Ingest Legality Rule",
-  "type": "object",
-  "additionalProperties": false,
-  "required": [
-    "schemaVersion",
-    "id",
-    "kind",
-    "name",
-    "pack",
-    "eventType",
-    "actionType",
-    "constraints"
-  ],
-  "properties": {
-    "schemaVersion": {
-      "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+$"
-    },
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9_.:-]+$"
-    },
-    "kind": {
-      "type": "string",
-      "enum": [
-        "legality_rule"
-      ]
-    },
-    "name": {
-      "type": "string",
-      "minLength": 1
-    },
-    "pack": {
-      "type": "string",
-      "pattern": "^[A-Z0-9_]+$"
-    },
-    "source": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "corpus": {
-          "type": "string"
-        },
-        "ref": {
-          "type": "string"
-        }
-      }
-    },
-    "extraction": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "method": {
-          "type": "string",
-          "enum": [
-            "manual",
-            "llm"
-          ]
-        },
-        "model": {
-          "type": "string"
-        },
-        "date": {
-          "type": "string"
-        }
-      }
-    },
-    "eventType": {
-      "type": "string",
-      "enum": [
-        "ACTION_PROPOSED"
-      ]
-    },
-    "actionType": {
-      "type": "string",
-      "pattern": "^[A-Z_]+$"
-    },
-    "constraints": {
-      "type": "array",
-      "items": {
-        "oneOf": [
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_combat_active"
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_your_turn"
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type",
-              "actionCost"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_action_cost"
-              },
-              "actionCost": {
-                "type": "string",
-                "enum": [
-                  "ACTION",
-                  "BONUS_ACTION",
-                  "REACTION"
-                ]
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_target"
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_adjacent_target"
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_line_of_sight"
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type",
-              "maxFeet",
-              "metric"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_range_max"
-              },
-              "maxFeet": {
-                "type": "integer",
-                "minimum": 0
-              },
-              "metric": {
-                "type": "string",
-                "enum": [
-                  "EUCLIDEAN"
-                ]
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type",
-              "equipment"
-            ],
-            "properties": {
-              "type": {
-                "const": "requires_equipment"
-              },
-              "equipment": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "string",
-                  "pattern": "^[A-Z0-9_]+$"
-                }
-              }
-            }
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "type",
-              "statePredicateId"
-            ],
-            "properties": {
-              "type": {
-                "const": "forbids_if_state"
-              },
-              "statePredicateId": {
-                "type": "string",
-                "pattern": "^[a-z0-9_.:-]+$"
-              }
-            }
-          }
-        ]
-      }
-    }
-  }
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://ghostplaier.local/schemas/rules-ingest/rules.legality.schema.json",
+    "title":  "Rules-Ingest Legality Rule",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "schemaVersion",
+                     "id",
+                     "scenario",
+                     "kind",
+                     "name",
+                     "pack",
+                     "eventType",
+                     "actionType",
+                     "constraints"
+                 ],
+    "properties":  {
+                       "schemaVersion":  {
+                                             "type":  "string",
+                                             "pattern":  "^\\d+\\.\\d+\\.\\d+$"
+                                         },
+                       "id":  {
+                                  "type":  "string",
+                                  "pattern":  "^[a-z0-9_.:-]+$"
+                              },
+                       "scenario":  {
+                                        "type":  "string",
+                                        "enum":  [
+                                                     "SCENARIO_1",
+                                                     "SCENARIO_2",
+                                                     "SCENARIO_3",
+                                                     "SCENARIO_4",
+                                                     "SCENARIO_5"
+                                                 ]
+                                    },
+                       "kind":  {
+                                    "type":  "string",
+                                    "enum":  [
+                                                 "legality_rule"
+                                             ]
+                                },
+                       "name":  {
+                                    "type":  "string",
+                                    "minLength":  1
+                                },
+                       "pack":  {
+                                    "type":  "string",
+                                    "pattern":  "^[A-Z0-9_]+$"
+                                },
+                       "source":  {
+                                      "type":  "object",
+                                      "additionalProperties":  false,
+                                      "properties":  {
+                                                         "corpus":  {
+                                                                        "type":  "string"
+                                                                    },
+                                                         "ref":  {
+                                                                     "type":  "string"
+                                                                 }
+                                                     }
+                                  },
+                       "extraction":  {
+                                          "type":  "object",
+                                          "additionalProperties":  false,
+                                          "properties":  {
+                                                             "method":  {
+                                                                            "type":  "string",
+                                                                            "enum":  [
+                                                                                         "manual",
+                                                                                         "llm"
+                                                                                     ]
+                                                                        },
+                                                             "model":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                             "date":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                      },
+                       "eventType":  {
+                                         "type":  "string",
+                                         "enum":  [
+                                                      "ACTION_PROPOSED"
+                                                  ]
+                                     },
+                       "actionType":  {
+                                          "type":  "string",
+                                          "pattern":  "^[A-Z_]+$"
+                                      },
+                       "constraints":  {
+                                           "type":  "array",
+                                           "items":  {
+                                                         "oneOf":  [
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_combat_active"
+                                                                                                       }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_your_turn"
+                                                                                                       }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type",
+                                                                                            "actionCost"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_action_cost"
+                                                                                                       },
+                                                                                              "actionCost":  {
+                                                                                                                 "type":  "string",
+                                                                                                                 "enum":  [
+                                                                                                                              "ACTION",
+                                                                                                                              "BONUS_ACTION",
+                                                                                                                              "REACTION"
+                                                                                                                          ]
+                                                                                                             }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_target"
+                                                                                                       }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_adjacent_target"
+                                                                                                       }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_line_of_sight"
+                                                                                                       }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type",
+                                                                                            "maxFeet",
+                                                                                            "metric"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_range_max"
+                                                                                                       },
+                                                                                              "maxFeet":  {
+                                                                                                              "type":  "integer",
+                                                                                                              "minimum":  0
+                                                                                                          },
+                                                                                              "metric":  {
+                                                                                                             "type":  "string",
+                                                                                                             "enum":  [
+                                                                                                                          "EUCLIDEAN"
+                                                                                                                      ]
+                                                                                                         }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type",
+                                                                                            "equipment"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "requires_equipment"
+                                                                                                       },
+                                                                                              "equipment":  {
+                                                                                                                "type":  "array",
+                                                                                                                "minItems":  1,
+                                                                                                                "items":  {
+                                                                                                                              "type":  "string",
+                                                                                                                              "pattern":  "^[A-Z0-9_]+$"
+                                                                                                                          }
+                                                                                                            }
+                                                                                          }
+                                                                       },
+                                                                       {
+                                                                           "type":  "object",
+                                                                           "additionalProperties":  false,
+                                                                           "required":  [
+                                                                                            "type",
+                                                                                            "statePredicateId"
+                                                                                        ],
+                                                                           "properties":  {
+                                                                                              "type":  {
+                                                                                                           "const":  "forbids_if_state"
+                                                                                                       },
+                                                                                              "statePredicateId":  {
+                                                                                                                       "type":  "string",
+                                                                                                                       "pattern":  "^[a-z0-9_.:-]+$"
+                                                                                                                   }
+                                                                                          }
+                                                                       }
+                                                                   ]
+                                                     }
+                                       }
+                   }
 }

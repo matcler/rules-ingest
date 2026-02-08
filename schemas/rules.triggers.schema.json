@@ -1,143 +1,169 @@
 {
-    "$schema":  "https://json-schema.org/draft/2020-12/schema",
-    "$id":  "https://ghostplaier.local/schemas/rules-ingest/rules.triggers.schema.json",
-    "title":  "Rules-Ingest Trigger Rule",
-    "type":  "object",
-    "additionalProperties":  false,
-    "required":  [
-                     "schemaVersion",
-                     "id",
-                     "scenario",
-                     "kind",
-                     "name",
-                     "pack",
-                     "eventType",
-                     "predicates"
-                 ],
-    "properties":  {
-                       "schemaVersion":  {
-                                             "type":  "string",
-                                             "pattern":  "^\\d+\\.\\d+\\.\\d+$"
-                                         },
-                       "id":  {
-                                  "type":  "string",
-                                  "pattern":  "^[a-z0-9_.:-]+$"
-                              },
-                       "scenario":  {
-                                        "type":  "string",
-                                        "enum":  [
-                                                     "SCENARIO_1",
-                                                     "SCENARIO_2",
-                                                     "SCENARIO_3",
-                                                     "SCENARIO_4",
-                                                     "SCENARIO_5"
-                                                 ]
-                                    },
-                       "kind":  {
-                                    "type":  "string",
-                                    "enum":  [
-                                                 "trigger_rule"
-                                             ]
-                                },
-                       "name":  {
-                                    "type":  "string",
-                                    "minLength":  1
-                                },
-                       "pack":  {
-                                    "type":  "string",
-                                    "pattern":  "^[A-Z0-9_]+$"
-                                },
-                       "source":  {
-                                      "type":  "object",
-                                      "additionalProperties":  false,
-                                      "properties":  {
-                                                         "corpus":  {
-                                                                        "type":  "string"
-                                                                    },
-                                                         "ref":  {
-                                                                     "type":  "string"
-                                                                 }
-                                                     }
-                                  },
-                       "extraction":  {
-                                          "type":  "object",
-                                          "additionalProperties":  false,
-                                          "properties":  {
-                                                             "method":  {
-                                                                            "type":  "string",
-                                                                            "enum":  [
-                                                                                         "manual",
-                                                                                         "llm"
-                                                                                     ]
-                                                                        },
-                                                             "model":  {
-                                                                           "type":  "string"
-                                                                       },
-                                                             "date":  {
-                                                                          "type":  "string"
-                                                                      }
-                                                         }
-                                      },
-                       "eventType":  {
-                                         "type":  "string",
-                                         "enum":  [
-                                                      "ACTION_PROPOSED",
-                                                      "ACTION_RESOLVED",
-                                                      "COMBAT_STARTED",
-                                                      "INITIATIVE_ROLLED",
-                                                      "INITIATIVE_SET",
-                                                      "TURN_STARTED",
-                                                      "TURN_ENDED",
-                                                      "ADVANCE_TURN"
-                                                  ]
-                                     },
-                       "predicates":  {
-                                          "type":  "array",
-                                          "items":  {
-                                                        "type":  "object",
-                                                        "additionalProperties":  false,
-                                                        "required":  [
-                                                                         "id"
-                                                                     ],
-                                                        "properties":  {
-                                                                           "id":  {
-                                                                                      "type":  "string",
-                                                                                      "pattern":  "^[a-z0-9_.:-]+$"
-                                                                                  },
-                                                                           "scenario":  {
-                                                                                            "type":  "string",
-                                                                                            "enum":  [
-                                                                                                         "SCENARIO_1",
-                                                                                                         "SCENARIO_2",
-                                                                                                         "SCENARIO_3",
-                                                                                                         "SCENARIO_4",
-                                                                                                         "SCENARIO_5"
-                                                                                                     ]
-                                                                                        },
-                                                                           "params":  {
-                                                                                          "type":  "object",
-                                                                                          "additionalProperties":  true
-                                                                                      }
-                                                                       }
-                                                    }
-                                      },
-                       "binds":  {
-                                     "type":  "object",
-                                     "additionalProperties":  false,
-                                     "properties":  {
-                                                        "actor":  {
-                                                                      "type":  "string"
-                                                                  },
-                                                        "target":  {
-                                                                       "type":  "string"
-                                                                   },
-                                                        "source":  {
-                                                                       "type":  "string"
-                                                                   },
-                                                        "area":  {
-                                                                     "type":  "string"
-                                                                 }
-                                                    }
-                                 }
-                   }
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ghostplaier.local/schemas/rules-ingest/rules.triggers.schema.json",
+    "title": "Rules-Ingest Trigger Rule",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "schemaVersion",
+        "id",
+        "scenario",
+        "kind",
+        "name",
+        "pack",
+        "source",
+        "extraction",
+        "eventType",
+        "predicates"
+    ],
+    "properties": {
+        "schemaVersion": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_.:-]+$"
+        },
+        "scenario": {
+            "type": "string",
+            "enum": [
+                "SCENARIO_1",
+                "SCENARIO_2",
+                "SCENARIO_3",
+                "SCENARIO_4",
+                "SCENARIO_5"
+            ]
+        },
+        "kind": {
+            "type": "string",
+            "enum": [
+                "trigger",
+                "trigger_rule"
+            ]
+        },
+        "name": {
+            "type": "string",
+            "minLength": 1
+        },
+        "pack": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+        },
+        "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "corpus",
+                "ref"
+            ],
+            "properties": {
+                "corpus": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[A-Z0-9_.:-]+$"
+                },
+                "ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+                }
+            }
+        },
+        "extraction": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "method",
+                "date",
+                "pageStart",
+                "pageEnd"
+            ],
+            "properties": {
+                "method": {
+                    "type": "string",
+                    "enum": [
+                        "manual",
+                        "llm"
+                    ]
+                },
+                "model": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "pageStart": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "pageEnd": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
+        "eventType": {
+            "type": "string",
+            "enum": [
+                "ACTION_PROPOSED",
+                "ACTION_RESOLVED",
+                "COMBAT_STARTED",
+                "INITIATIVE_ROLLED",
+                "INITIATIVE_SET",
+                "TURN_STARTED",
+                "TURN_ENDED",
+                "ADVANCE_TURN"
+            ]
+        },
+        "predicates": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9_.:-]+$"
+                    },
+                    "scenario": {
+                        "type": "string",
+                        "enum": [
+                            "SCENARIO_1",
+                            "SCENARIO_2",
+                            "SCENARIO_3",
+                            "SCENARIO_4",
+                            "SCENARIO_5"
+                        ]
+                    },
+                    "params": {
+                        "type": "object",
+                        "additionalProperties": true
+                    }
+                }
+            }
+        },
+        "binds": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "actor": {
+                    "type": "string"
+                },
+                "target": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "area": {
+                    "type": "string"
+                }
+            }
+        }
+    }
 }

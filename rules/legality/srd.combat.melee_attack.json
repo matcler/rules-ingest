@@ -1,40 +1,42 @@
 {
-    "schemaVersion":  "1.0.0",
-    "id":  "srd.combat.melee_attack",
-    "scenario":  "SCENARIO_1",
-    "kind":  "legality_rule",
-    "name":  "Melee Attack (Combat)",
-    "pack":  "SRD_COMBAT",
-    "source":  {
-                   "corpus":  "SRD_5E_5.1",
-                   "ref":  "combat.melee_attack"
-               },
-    "extraction":  {
-                       "method":  "manual",
-                       "date":  "2024-01-01"
-                   },
-    "eventType":  "ACTION_PROPOSED",
-    "actionType":  "ATTACK_MELEE",
-    "constraints":  [
-                        {
-                            "type":  "requires_combat_active"
-                        },
-                        {
-                            "type":  "requires_your_turn"
-                        },
-                        {
-                            "type":  "requires_action_cost",
-                            "actionCost":  "ACTION"
-                        },
-                        {
-                            "type":  "requires_target"
-                        },
-                        {
-                            "type":  "requires_adjacent_target"
-                        },
-                        {
-                            "type":  "forbids_if_state",
-                            "statePredicateId":  "actor.forbids.attack"
-                        }
-                    ]
+    "schemaVersion": "1.0.0",
+    "id": "srd.combat.melee_attack",
+    "scenario": "SCENARIO_1",
+    "kind": "legality",
+    "name": "Melee Attack (Combat)",
+    "pack": "SRD_COMBAT",
+    "source": {
+        "corpus": "SRD_5E_5.1",
+        "ref": "combat.melee_attack"
+    },
+    "extraction": {
+        "method": "manual",
+        "date": "2024-01-01",
+        "pageStart": 0,
+        "pageEnd": 0
+    },
+    "eventType": "ACTION_PROPOSED",
+    "actionType": "ATTACK_MELEE",
+    "constraints": [
+        {
+            "type": "requires_combat_active"
+        },
+        {
+            "type": "requires_your_turn"
+        },
+        {
+            "type": "requires_action_cost",
+            "actionCost": "ACTION"
+        },
+        {
+            "type": "requires_target"
+        },
+        {
+            "type": "requires_adjacent_target"
+        },
+        {
+            "type": "forbids_if_state",
+            "statePredicateId": "actor.forbids.attack"
+        }
+    ]
 }

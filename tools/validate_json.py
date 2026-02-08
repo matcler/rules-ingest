@@ -76,55 +76,76 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(
         description="Validate .json or .jsonl files against a JSON Schema (draft 2020-12)."
     )
-    parser.add_argument(
+    mode_group = parser.add_mutually_exclusive_group(required=True)
+    mode_group.add_argument(
         "--schema",
-        required=True,
         help="Path to schema JSON file (e.g. schemas/structured.schema.json)",
+    )
+    mode_group.add_argument(
+        "--rules",
+        action="store_true",
+        help="Validate rules/legality, rules/triggers, and rules/transitions against their schemas.",
     )
     parser.add_argument(
         "paths",
-        nargs="+",
+        nargs="*",
         help="Files or directories to validate (.json/.jsonl). Directories are searched recursively.",
     )
     args = parser.parse_args(argv)
 
     repo_root = Path(__file__).resolve().parents[1]
-    schema_path = Path(args.schema).resolve()
-
-    if not schema_path.exists():
-        eprint(f"[ERROR] Schema not found: {schema_path}")
-        return 2
-
-    try:
-        schema_doc = load_json(schema_path)
-    except Exception as ex:
-        eprint(f"[ERROR] Failed to parse schema '{schema_path}': {ex}")
-        return 2
-
     registry = build_registry(repo_root)
-    validator = Draft202012Validator(schema_doc, registry=registry)
-
-    files = collect_files(args.paths)
-    if not files:
-        eprint("[ERROR] No .json/.jsonl files found to validate.")
-        return 2
-
     all_errors: List[str] = []
 
-    for f in files:
-        ext = f.suffix.lower()
+    def validate_schema(schema_path: Path, paths: List[Path], allow_empty: bool) -> None:
+        if not schema_path.exists():
+            all_errors.append(f"[ERROR] Schema not found: {schema_path}")
+            return
         try:
-            if ext == ".json":
-                data = load_json(f)
-                all_errors.extend(validate_one(validator, data, str(f)))
-            elif ext == ".jsonl":
-                for line_no, obj in iter_jsonl(f):
-                    label = f"{f}#L{line_no}"
-                    all_errors.extend(validate_one(validator, obj, label))
-        except json.JSONDecodeError as ex:
-            all_errors.append(f"{f}: JSON parse error: {ex}")
+            schema_doc = load_json(schema_path)
         except Exception as ex:
-            all_errors.append(f"{f}: Unexpected error: {ex}")
+            all_errors.append(f"[ERROR] Failed to parse schema '{schema_path}': {ex}")
+            return
+
+        validator = Draft202012Validator(schema_doc, registry=registry)
+        files = collect_files([str(p) for p in paths])
+        if not files:
+            message = f"[WARN] No .json/.jsonl files found to validate for {schema_path}."
+            if allow_empty:
+                eprint(message)
+                return
+            all_errors.append(message)
+            return
+
+        for f in files:
+            ext = f.suffix.lower()
+            try:
+                if ext == ".json":
+                    data = load_json(f)
+                    all_errors.extend(validate_one(validator, data, str(f)))
+                elif ext == ".jsonl":
+                    for line_no, obj in iter_jsonl(f):
+                        label = f"{f}#L{line_no}"
+                        all_errors.extend(validate_one(validator, obj, label))
+            except json.JSONDecodeError as ex:
+                all_errors.append(f"{f}: JSON parse error: {ex}")
+            except Exception as ex:
+                all_errors.append(f"{f}: Unexpected error: {ex}")
+
+    if args.rules:
+        rule_sets = [
+            (repo_root / "schemas" / "rules.legality.schema.json", [repo_root / "rules" / "legality"]),
+            (repo_root / "schemas" / "rules.triggers.schema.json", [repo_root / "rules" / "triggers"]),
+            (repo_root / "schemas" / "rules.transitions.schema.json", [repo_root / "rules" / "transitions"]),
+        ]
+        for schema_path, paths in rule_sets:
+            validate_schema(schema_path, paths, allow_empty=True)
+    else:
+        if not args.paths:
+            eprint("[ERROR] No .json/.jsonl files found to validate.")
+            return 2
+        schema_path = Path(args.schema).resolve()
+        validate_schema(schema_path, [Path(p) for p in args.paths], allow_empty=False)
 
     if all_errors:
         eprint("VALIDATION FAILED")
@@ -138,3 +159,4 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

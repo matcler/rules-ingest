@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghostplaier.local/schemas/rules-ingest/rules.transitions.schema.json",
+  "title": "Rules-Ingest Transition Rule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "name",
+    "pack",
+    "eventType",
+    "operations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.:-]+$"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "transition_rule"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pack": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "corpus": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string"
+        }
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "manual",
+            "llm"
+          ]
+        },
+        "model": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "ACTION_RESOLVED"
+      ]
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "consume_resource",
+              "apply_condition",
+              "remove_condition",
+              "spawn_area",
+              "despawn_area",
+              "set_flag",
+              "clear_flag"
+            ]
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  }
+}

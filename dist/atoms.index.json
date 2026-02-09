@@ -1,0 +1,25 @@
+{
+  "kind": "atoms_index",
+  "entries": [
+    {
+      "scenario": "SCENARIO_2",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": null,
+      "atomIds": [
+        "srd.combat.requires_combat_active",
+        "srd.combat.requires_your_turn",
+        "srd.combat.requires_initiative_set",
+        "srd.combat.requires_phase_action"
+      ]
+    },
+    {
+      "scenario": "SCENARIO_2",
+      "eventType": "ACTION_PROPOSED",
+      "actionType": "ATTACK",
+      "atomIds": [
+        "srd.combat.requires_target",
+        "srd.combat.requires_adjacent_target"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "atomTypes": {
+    "REQUIRES_COMBAT_ACTIVE": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": null },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "COMBAT_NOT_ACTIVE",
+        "detailsReason": "REQUIRES_COMBAT_ACTIVE",
+        "ifDataMissing": "DENY"
+      },
+      "params": { "allowed": false }
+    },
+    "REQUIRES_YOUR_TURN": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": null },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "NOT_YOUR_TURN",
+        "detailsReason": "REQUIRES_YOUR_TURN",
+        "ifDataMissing": "DENY"
+      },
+      "params": { "allowed": false }
+    },
+    "REQUIRES_INITIATIVE_SET": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": null },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "INITIATIVE_NOT_SET",
+        "detailsReason": "REQUIRES_INITIATIVE_SET",
+        "ifDataMissing": "DENY"
+      },
+      "params": { "allowed": false }
+    },
+    "REQUIRES_PHASE": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": null },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "WRONG_PHASE",
+        "detailsReason": "REQUIRES_PHASE",
+        "ifDataMissing": "DENY"
+      },
+      "params": {
+        "allowed": true,
+        "allowedKeys": ["phase"],
+        "phasePattern": "^[A-Z0-9_]+$"
+      }
+    },
+    "REQUIRES_TARGET": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": ["ATTACK"] },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "INVALID_MOVE",
+        "detailsReason": "REQUIRES_TARGET",
+        "ifDataMissing": "DENY"
+      },
+      "params": { "allowed": false }
+    },
+    "REQUIRES_ADJACENT_TARGET": {
+      "appliesTo": { "eventType": ["ACTION_PROPOSED"], "actionType": ["ATTACK"] },
+      "requiredFields": ["schemaVersion","id","pack","atomType","appliesTo","enforcement"],
+      "enforcement": {
+        "denyCode": "TARGET_NOT_ADJACENT",
+        "detailsReason": "REQUIRES_ADJACENT_TARGET",
+        "ifDataMissing": "DENY"
+      },
+      "params": { "allowed": false }
+    }
+  }
+}

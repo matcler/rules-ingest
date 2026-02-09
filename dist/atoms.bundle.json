@@ -1,0 +1,87 @@
+{
+  "kind": "atoms",
+  "scenario": "SCENARIO_2",
+  "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.mvp" },
+  "extraction": { "method": "manual", "date": "2026-02-08", "pageStart": 0, "pageEnd": 0 },
+  "atoms": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_combat_active",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.combat_sequence" },
+      "atomType": "REQUIRES_COMBAT_ACTIVE",
+      "appliesTo": { "eventType": "ACTION_PROPOSED" },
+      "enforcement": {
+        "denyCode": "COMBAT_NOT_ACTIVE",
+        "detailsReason": "REQUIRES_COMBAT_ACTIVE",
+        "ifDataMissing": "DENY"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_your_turn",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.turn_order" },
+      "atomType": "REQUIRES_YOUR_TURN",
+      "appliesTo": { "eventType": "ACTION_PROPOSED" },
+      "enforcement": {
+        "denyCode": "NOT_YOUR_TURN",
+        "detailsReason": "REQUIRES_YOUR_TURN",
+        "ifDataMissing": "DENY"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_initiative_set",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.initiative" },
+      "atomType": "REQUIRES_INITIATIVE_SET",
+      "appliesTo": { "eventType": "ACTION_PROPOSED" },
+      "enforcement": {
+        "denyCode": "INITIATIVE_NOT_SET",
+        "detailsReason": "REQUIRES_INITIATIVE_SET",
+        "ifDataMissing": "DENY"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_phase_action",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.rounds" },
+      "atomType": "REQUIRES_PHASE",
+      "appliesTo": { "eventType": "ACTION_PROPOSED" },
+      "params": { "phase": "ACTION" },
+      "enforcement": {
+        "denyCode": "WRONG_PHASE",
+        "detailsReason": "REQUIRES_PHASE",
+        "ifDataMissing": "DENY"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_target",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.making_an_attack" },
+      "atomType": "REQUIRES_TARGET",
+      "appliesTo": { "eventType": "ACTION_PROPOSED", "actionType": "ATTACK" },
+      "enforcement": {
+        "denyCode": "INVALID_MOVE",
+        "detailsReason": "REQUIRES_TARGET",
+        "ifDataMissing": "DENY"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.requires_adjacent_target",
+      "pack": "SRD_COMBAT",
+      "source": { "corpus": "SRD_5E_5.2.1", "ref": "combat.melee_attack" },
+      "atomType": "REQUIRES_ADJACENT_TARGET",
+      "appliesTo": { "eventType": "ACTION_PROPOSED", "actionType": "ATTACK" },
+      "enforcement": {
+        "denyCode": "TARGET_NOT_ADJACENT",
+        "detailsReason": "REQUIRES_ADJACENT_TARGET",
+        "ifDataMissing": "DENY"
+      }
+    }
+  ]
+}

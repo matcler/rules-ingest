@@ -4,4 +4,4 @@ __pycache__/
 .DS_Store
 .venv
 *.patch
-*.bak
+*.bak*:Zone.Identifier

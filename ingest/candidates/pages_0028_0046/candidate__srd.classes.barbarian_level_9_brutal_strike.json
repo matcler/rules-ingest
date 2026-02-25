@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_9_brutal_strike|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_9_brutal_strike"
+  },
+  "text": {
+    "raw": "Level 9: Brutal Strike\n\nIf you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your\nchoice on your turn. The chosen attack roll mustn’t\nhave Disadvantage. If the chosen attack roll hits, the\ntarget takes an extra 1d10 damage of the same type\ndealt by the weapon or Unarmed Strike, and you can\ncause one Brutal Strike effect of your choice. You\nhave the following effect options.\nForceful Blow. The target is pushed 15 feet\nstraight away from you. You can then move up to\nhalf your Speed straight toward the target without\nprovoking Opportunity Attacks.\n\nHamstring Blow. The target’s Speed is reduced by\n15 feet until the start of your next turn. A target can\nbe affected by only one Hamstring Blow at a time—\nthe most recent one."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

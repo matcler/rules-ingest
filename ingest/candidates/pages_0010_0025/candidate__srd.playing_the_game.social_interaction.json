@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|social_interaction|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 10,
+    "pageEnd": 11,
+    "ref": "srd.playing_the_game.social_interaction"
+  },
+  "text": {
+    "raw": "Social Interaction\n\nDuring their adventures, player characters meet\nmany different people and face some monsters that\nwould rather talk than fight. In those situations, it’s\ntime for social interaction, which takes many forms.\nFor example, you might try to convince a burglar to\nconfess to wrongdoing or try to flatter a guard. The\nGame Master assumes the roles of any nonplayer\ncharacters who are participating.\nAn NPC’s attitude toward your character is\nFriendly, Indifferent, or Hostile, as defined in “Rules\nGlossary.” Friendly NPCs are predisposed to help,\nand Hostile ones are inclined to hinder.\nSocial interactions progress in two ways: through\nroleplaying and ability checks.\n\nRoleplaying\n\nRoleplaying is, literally, the act of playing out a role.\nIn this case, it’s you as a player determining how\nyour character thinks, acts, and talks. Roleplaying is\npart of every aspect of the game, and it comes to the\nfore during social interactions.\nAs you roleplay, consider whether you prefer an\nactive approach or a descriptive approach.\nThe GM uses an NPC’s personality and your character’s actions and attitudes to determine how an\n\nNPC reacts. A cowardly bandit might buckle under\nthreats of imprisonment. A stubborn merchant\nrefuses to help if the characters badger her. A vain\ndragon laps up flattery.\nWhen interacting with an NPC, pay attention to\nthe GM’s portrayal of the NPC’s personality. You\nmight be able to learn an NPC’s goals and then use\nthat information to influence the NPC.\nIf you offer NPCs something they want or play\non their sympathies, fears, or goals, you can form\nfriendships, ward off violence, or learn a key piece\nof information. On the other hand, if you insult a\nproud warrior or speak ill of a noble’s allies, your\nefforts to convince or deceive will likely fail."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

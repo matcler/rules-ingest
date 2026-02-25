@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|melee_attacks|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.combat.melee_attacks"
+  },
+  "text": {
+    "raw": "Melee Attacks\n\nA melee attack allows you to attack a target within\nyour reach. A melee attack typically uses a handheld weapon or an Unarmed Strike. Many monsters\nmake melee attacks with claws, teeth, or other body\nparts. A few spells also involve melee attacks.\n\nReach\n\nA creature has a 5-foot reach and can thus attack\ntargets within 5 feet when making a melee attack.\nCertain creatures have melee attacks with a reach\ngreater than 5 feet, as noted in their descriptions."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

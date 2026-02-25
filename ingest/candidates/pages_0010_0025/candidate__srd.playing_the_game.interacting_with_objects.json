@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|interacting_with_objects|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 11,
+    "pageEnd": 12,
+    "ref": "srd.playing_the_game.interacting_with_objects"
+  },
+  "text": {
+    "raw": "Interacting with Objects\n\nInteracting with objects is often simple to resolve.\nThe player tells the GM that their character is doing something, such as moving a lever or opening\n\na door, and the GM describes what happens. Sometimes, however, rules govern what you can do with\nan object, as detailed in the following sections.\n\nWhat Is an Object?\n\nFor the purpose of the rules, an object is a discrete,\ninanimate item like a window, door, sword, book,\ntable, chair, or stone. It isn’t a building or a vehicle,\nwhich are composed of many objects.\n\nTime-Limited Object Interactions\n\nWhen time is short, such as in combat, interactions\nwith objects are limited: one free interaction per\nturn. That interaction must occur during a creature’s movement or action. Any additional interactions require the Utilize action, as explained in\n“Combat” later in “Playing the Game.”\n\nFinding Hidden Objects\n\nWhen your character searches for hidden things,\nsuch as a secret door or a trap, the GM typically asks\nyou to make a Wisdom (Perception) check, provided\nyou describe the character searching in the hidden\nobject’s vicinity. On a success, you find the object,\nother important details, or both.\nIf you describe your character searching nowhere\nnear a hidden object, a Wisdom (Perception) check\nwon’t reveal the object, no matter the check’s total.\n\nCarrying Objects\n\nYou can usually carry your gear and treasure without worrying about the weight of those objects. If\nyou try to haul an unusually heavy object or a massive number of lighter objects, the GM might require\nyou to abide by the rules for carrying capacity in\n“Rules Glossary.”\n\nBreaking Objects\n\nAs an action, you can automatically break or otherwise destroy a fragile, nonmagical object, such\nas a glass container or a piece of paper. If you try to\ndamage something more resilient, the GM might use\nthe rules on breaking objects in “Rules Glossary.”"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

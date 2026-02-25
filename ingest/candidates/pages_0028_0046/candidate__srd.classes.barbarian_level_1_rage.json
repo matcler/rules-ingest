@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_1_rage|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 28,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_1_rage"
+  },
+  "text": {
+    "raw": "Level 1: Rage\n\nYou can imbue yourself with a primal power called\nRage, a force that grants you extraordinary might\nand resilience. You can enter it as a Bonus Action if\nyou aren’t wearing Heavy armor.\nYou can enter your Rage the number of times\nshown for your Barbarian level in the Rages column\nof the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you\nregain all expended uses when you finish a Long\nRest.\n\nBarbarian Features\n\n\nLevel\n\nProficiency\nBonus\n\n\n+2\n\nClass Features\n\nRage, Unarmored Defense, Weapon Mastery\n\nRages\n\nRage\nDamage\n\nWeapon\nMastery\n\n\n+2\n\n\n\n+2\n\nDanger Sense, Reckless Attack\n\n\n+2\n\n\n\n+2\n\nBarbarian Subclass, Primal Knowledge\n\n\n+2\n\n\n\n+2\n\nAbility Score Improvement\n\n\n+2\n\n\n\n+3\n\nExtra Attack, Fast Movement\n\n\n+2\n\n\n\n+3\n\nSubclass feature\n\n\n+2\n\n\n\n+3\n\nFeral Instinct, Instinctive Pounce\n\n\n+2\n\n\n\n+3\n\nAbility Score Improvement\n\n\n+2\n\n\n\n+4\n\nBrutal Strike\n\n\n+3\n\n\n\n+4\n\nSubclass feature\n\n\n+3\n\n\n\n+4\n\nRelentless Rage\n\n\n+3\n\n\n\n+4\n\nAbility Score Improvement\n\n\n+3\n\n\n\n+5\n\nImproved Brutal Strike\n\n\n+3\n\n\n\n+5\n\nSubclass feature\n\n\n+3\n\n\n\n+5\n\nPersistent Rage\n\n\n+3\n\n\n\n+5\n\nAbility Score Improvement\n\n\n+4\n\n\n\n+6\n\nImproved Brutal Strike\n\n\n+4\n\n\n\n+6\n\nIndomitable Might\n\n\n+4\n\n\n\n+6\n\nEpic Boon\n\n\n+4\n\n\n\n+6\n\nPrimal Champion\n\n\n+4\n\n\n\nWhile active, your Rage follows the rules below.\nDamage Resistance. You have Resistance to Bludgeoning, Piercing, and Slashing damage.\nRage Damage. When you make an attack using\nStrength—with either a weapon or an Unarmed\nStrike—and deal damage to the target, you gain\na bonus to the damage that increases as you gain\nlevels as a Barbarian, as shown in the Rage Damage\ncolumn of the Barbarian Features table.\nStrength Advantage. You have Advantage on\nStrength checks and Strength saving throws.\nNo Concentration or Spells. You can’t maintain\nConcentration, and you can’t cast spells.\nDuration. The Rage lasts until the end of your\nnext turn, and it ends early if you don Heavy armor\nor have the Incapacitated condition. If your Rage\nis still active on your next turn, you can extend\nthe Rage for another round by doing one of the\nfollowing:\n• Make an attack roll against an enemy.\n• Force an enemy to make a saving throw.\n• Take a Bonus Action to extend your Rage.\n\nEach time the Rage is extended, it lasts until the end\nof your next turn. You can maintain a Rage for up to\n10 minutes."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

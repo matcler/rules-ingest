@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|class_features_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.class_features_multiclassing"
+  },
+  "text": {
+    "raw": "Class Features\n\nWhen you gain a new level in a class, you get its features for that level. A few features have additional\nrules when you’re multiclassing. Check the information about multiclassing included in each of your\nclasses’ descriptions.\nSpecial rules apply to Extra Attack, Spellcasting,\nand features (such as Unarmored Defense) that give\nyou alternative ways to calculate your Armor Class."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

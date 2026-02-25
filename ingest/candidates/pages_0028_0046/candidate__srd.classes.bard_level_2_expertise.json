@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_2_expertise|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 32,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_2_expertise"
+  },
+  "text": {
+    "raw": "Level 2: Expertise\n\nYou gain Expertise (see “Rules Glossary”) in two of\nyour skill proficiencies of your choice. Performance\nand Persuasion are recommended if you have proficiency in them.\nAt Bard level 9, you gain Expertise in two more of\nyour skill proficiencies of your choice."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_02|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 10,
+    "pageEnd": 10,
+    "ref": "srd.playing_the_game.hot_rule_02"
+  },
+  "text": {
+    "raw": "example, allows a Rogue to take a Bonus Action. You\ncan take a Bonus Action only when a special ability,\na spell, or another feature of the game states that\nyou can do something as a Bonus Action. You otherwise don’t have a Bonus Action to take.\nYou can take only one Bonus Action on your turn,\nso you must choose which Bonus Action to use if you\nhave more than one available.\nYou choose when to take a Bonus Action during\nyour turn unless the Bonus Action’s timing is specified. Anything that deprives you of your ability to\ntake actions also prevents you from taking a Bonus\nAction."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

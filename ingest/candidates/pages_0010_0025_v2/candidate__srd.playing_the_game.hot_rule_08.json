@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_08|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 14,
+    "pageEnd": 14,
+    "ref": "srd.playing_the_game.hot_rule_08"
+  },
+  "text": {
+    "raw": "The GM might require you to use an action for\nany of these activities when it needs special care or\nwhen it presents an unusual obstacle. For instance,\nthe GM might require you to take the Utilize action\nto open a stuck door or turn a crank to lower a\ndrawbridge.\nDoing Nothing on Your Turn. You can forgo moving, taking an action, or doing anything at all on\nyour turn. If you can’t decide what to do, consider\ntaking the defensive Dodge action or the Ready action to delay acting."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

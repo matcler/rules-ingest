@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|playing_on_a_grid|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 13,
+    "pageEnd": 14,
+    "ref": "srd.combat.playing_on_a_grid"
+  },
+  "text": {
+    "raw": "Playing on a Grid\n\nIf you play using a square grid and miniatures or\nother tokens, follow these rules.\nSquares. Each square represents 5 feet.\nSpeed. Rather than moving foot by foot, move\nsquare by square on the grid, using your Speed in\n5-foot segments. You can translate your Speed into\nsquares by dividing it by 5. For example, a Speed of\n30 feet translates into 6 squares. If you use a grid often, consider writing your Speed in squares on your\ncharacter sheet.\nEntering a Square. To enter a square, you must\nhave enough movement left to pay for entering. It\ncosts 1 square of movement to enter an unoccupied\nsquare that’s adjacent to your space (orthogonally\nor diagonally adjacent). A square of Difficult Terrain\ncosts 2 squares to enter. Other effects might make a\nsquare cost even more.\nCorners. Diagonal movement can’t cross the corner of a wall, a large tree, or another terrain feature\nthat fills its space.\nRanges. To determine the range on a grid between two things—whether creatures or objects—\ncount squares from a square adjacent to one of them\nand stop counting in the space of the other one.\nCount by the shortest route.\n\nThe GM might require you to use an action for\nany of these activities when it needs special care or\nwhen it presents an unusual obstacle. For instance,\nthe GM might require you to take the Utilize action\nto open a stuck door or turn a crank to lower a\ndrawbridge.\nDoing Nothing on Your Turn. You can forgo moving, taking an action, or doing anything at all on\nyour turn. If you can’t decide what to do, consider\ntaking the defensive Dodge action or the Ready action to delay acting."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

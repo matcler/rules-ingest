@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_2_danger_sense|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_2_danger_sense"
+  },
+  "text": {
+    "raw": "Level 2: Danger Sense\n\nYou gain an uncanny sense of when things aren’t as\nthey should be, giving you an edge when you dodge\nperils. You have Advantage on Dexterity saving\nthrows unless you have the Incapacitated condition."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

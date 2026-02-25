@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|one_spell_with_slot_per_turn|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 105,
+    "pageEnd": 105,
+    "ref": "srd.spellcasting.one_spell_with_slot_per_turn"
+  },
+  "text": {
+    "raw": "One Spell with a Spell Slot per Turn\n\nOn a turn, you can expend only one spell slot to cast\na spell. This rule means you can’t, for example, cast\na spell with a spell slot using the Magic action and\nanother one using a Bonus Action on the same turn."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

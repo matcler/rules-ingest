@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_2_wild_shape|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 42,
+    "pageEnd": 42,
+    "ref": "srd.classes.druid_level_2_wild_shape"
+  },
+  "text": {
+    "raw": "Level 2: Wild Shape\n\nThe power of nature allows you to assume the form\nof an animal. As a Bonus Action, you shape-shift into\na Beast form that you have learned for this feature\n(see “Known Forms” below). You stay in that form\nfor a number of hours equal to half your Druid level\nor until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form\nearly as a Bonus Action.\nNumber of Uses. You can use Wild Shape twice.\nYou regain one expended use when you finish a\nShort Rest, and you regain all expended uses when\nyou finish a Long Rest.\nYou gain additional uses when you reach certain\nDruid levels, as shown in the Wild Shape column of\nthe Druid Features table.\nKnown Forms. You know four Beast forms for this\nfeature, chosen from among Beast stat blocks that\nhave a maximum Challenge Rating of 1/4 and that\nlack a Fly Speed (see “Animals” in “Monsters” for\nstat block options). The Rat, Riding Horse, Spider,\nand Wolf are recommended. Whenever you finish a\nLong Rest, you can replace one of your known forms\nwith another eligible form.\nWhen you reach certain Druid levels, your number\nof known forms and the maximum Challenge Rating\nfor those forms increases, as shown in the Beast\nShapes table. In addition, starting at level 8, you can\nadopt a form that has a Fly Speed.\nWhen choosing known forms, you may look in\nother sources for eligible Beasts if the Game Master\npermits you to do so.\n\nBeast Shapes\nDruid\nLevel\n\nKnown\nForms\n\nMax\nCR\n\nFly\nSpeed\n\n\n\n1/4\n\nNo\n\n\n\n1/2\n\nNo\n\n\n\n\nYes"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

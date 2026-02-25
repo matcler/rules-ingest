@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|cleric_core_traits|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 36,
+    "pageEnd": 36,
+    "ref": "srd.classes.cleric_core_traits"
+  },
+  "text": {
+    "raw": "Cleric\n\nAs a Multiclass Character\n• Gain the following traits from the Core Cleric\nTraits table: Hit Point Die and training with Light\nand Medium armor and Shields.\n• Gain the Cleric’s level 1 features, which are listed\nin the Cleric Features table. See the multiclassing\nrules in “Character Creation” to determine your\navailable spell slots.\n\nCore Cleric Traits\nPrimary Ability\n\nWisdom\n\nHit Point Die\n\nD8 per Cleric level\n\nSaving Throw\nProficiencies\n\nWisdom and Charisma\n\nSkill Proficiencies\n\nChoose 2: History, Insight,\nMedicine, Persuasion, or\nReligion"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_13|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.playing_the_game.hot_rule_13"
+  },
+  "text": {
+    "raw": "During your move, you can mount a creature that\nis within 5 feet of you or dismount. Doing so costs\nan amount of movement equal to half your Speed\n(round down). For example, if your Speed is 30 feet,\nyou spend 15 feet of movement to mount a horse."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

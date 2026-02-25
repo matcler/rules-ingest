@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_1_primal_order|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 42,
+    "pageEnd": 42,
+    "ref": "srd.classes.druid_level_1_primal_order"
+  },
+  "text": {
+    "raw": "Level 1: Primal Order\n\nYou have dedicated yourself to one of the following\nsacred roles of your choice.\nMagician. You know one extra cantrip from the\nDruid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence\n(Arcana or Nature) checks. The bonus equals your\nWisdom modifier (minimum bonus of +1).\nWarden. Trained for battle, you gain proficiency\nwith Martial weapons and training with Medium\narmor."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

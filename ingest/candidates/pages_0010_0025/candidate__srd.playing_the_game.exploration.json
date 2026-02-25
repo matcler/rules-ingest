@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|exploration|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 11,
+    "pageEnd": 11,
+    "ref": "srd.playing_the_game.exploration"
+  },
+  "text": {
+    "raw": "Exploration\n\nExploration involves delving into places that are\ndangerous and full of mystery. The rules in this section detail some of the ways adventurers interact\nwith the environment in such places.\n\nAdventuring Equipment\n\nAs adventurers explore, their equipment can help\nthem in many ways. For example, they can reach\nout-of-the-way places with a Ladder, perceive things\nthey wouldn’t otherwise notice with a Torch or\nanother light source, bypass locked doors and containers with Thieves’ Tools, and create obstacles for\npursuers with Caltrops.\nSee “Equipment” for rules on many items that are\nuseful on adventures. The items in the“Tools” and\n“Adventuring Gear” sections are especially useful.\nThe weapons in “Equipment” can also be used for\nmore than battle; you could use a Quarterstaff,\nfor example, to push a sinister-looking button that\nyou’re reluctant to touch."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

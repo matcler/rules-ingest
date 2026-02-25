@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_09|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 14,
+    "pageEnd": 14,
+    "ref": "srd.playing_the_game.hot_rule_09"
+  },
+  "text": {
+    "raw": "On your turn, you can move a distance equal to your\nSpeed or less. Or you can decide not to move.\nYour movement can include climbing, crawling,\njumping, and swimming (each explained in “Rules\nGlossary”). These different modes of movement can\nbe combined with your regular movement, or they\ncan constitute your entire move.\nHowever you’re moving with your Speed, you\ndeduct the distance of each part of your move from\nit until it is used up or until you are done moving,\nwhichever comes first.\nA character’s Speed is determined during character creation. A monster’s Speed is noted in the\nmonster’s stat block. See “Rules Glossary” for more\nabout Speed as well as about special speeds, such as\na Climb Speed, Fly Speed, or Swim Speed."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

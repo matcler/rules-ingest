@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|movement_and_position|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 14,
+    "pageEnd": 14,
+    "ref": "srd.combat.movement_and_position"
+  },
+  "text": {
+    "raw": "Movement and Position\n\nOn your turn, you can move a distance equal to your\nSpeed or less. Or you can decide not to move.\nYour movement can include climbing, crawling,\njumping, and swimming (each explained in “Rules\nGlossary”). These different modes of movement can\nbe combined with your regular movement, or they\ncan constitute your entire move.\nHowever you’re moving with your Speed, you\ndeduct the distance of each part of your move from\nit until it is used up or until you are done moving,\nwhichever comes first.\nA character’s Speed is determined during character creation. A monster’s Speed is noted in the\nmonster’s stat block. See “Rules Glossary” for more\nabout Speed as well as about special speeds, such as\na Climb Speed, Fly Speed, or Swim Speed.\n\nDifficult Terrain\n\nCombatants are often slowed down by Difficult\nTerrain. Low furniture, rubble, undergrowth, steep\nstairs, snow, and shallow bogs are examples of Difficult Terrain.\nEvery foot of movement in Difficult Terrain costs\n1 extra foot, even if multiple things in a space count\nas Difficult Terrain.\n\nBreaking Up Your Move\n\nYou can break up your move, using some of its\nmovement before and after any action, Bonus Action, or Reaction you take on the same turn. For\nexample, if you have a Speed of 30 feet, you could go\n10 feet, take an action, and then go 20 feet.\n\nDropping Prone\n\nOn your turn, you can give yourself the Prone condition (see “Rules Glossary”) without using an action\nor any of your Speed, but you can’t do so if your\nSpeed is 0.\n\n\n\nCreature Size\nA creature belongs to a size category, which determines the width of the square space the creature\noccupies on a map, as shown on the Creature Size\nand Space table. That table lists the sizes from\nsmallest (Tiny) to largest (Gargantuan). A creature’s\nspace is the area that it effectively controls in combat and the area it needs to fight effectively.\nA character’s size is determined by species, and\na monster’s size is specified in the monster’s stat\nblock.\n\nCreature Size and Space\nSize\n\nSpace (Feet)\n\nSpace (Squares)\n\nTiny\n\n2½ by 2½ feet\n\n4 per square\n\nSmall\n\n5 by 5 feet\n\n1 square\n\nMedium\n\n5 by 5 feet\n\n1 square\n\nLarge\n\n10 by 10 feet\n\n4 squares (2 by 2)\n\nHuge\n\n15 by 15 feet\n\n9 squares (3 by 3)\n\nGargantuan\n\n20 by 20 feet\n\n16 squares (4 by 4)\n\nMoving around Other Creatures\nDuring your move, you can pass through the space\nof an ally, a creature that has the Incapacitated\ncondition (see “Rules Glossary”), a Tiny creature, or\na creature that is two sizes larger or smaller than\nyou.\nAnother creature’s space is Difficult Terrain for\nyou unless that creature is Tiny or your ally.\nYou can’t willingly end a move in a space occupied\nby another creature. If you somehow end a turn in\na space with another creature, you have the Prone\ncondition (see “Rules Glossary”) unless you are Tiny\nor are of a larger size than the other creature."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

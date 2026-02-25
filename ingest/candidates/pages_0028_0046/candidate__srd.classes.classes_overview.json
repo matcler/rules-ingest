@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|classes_overview|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 28,
+    "pageEnd": 28,
+    "ref": "srd.classes.classes_overview"
+  },
+  "text": {
+    "raw": "Classes\n\n• Gain the Barbarian’s level 1 features, which are\nlisted in the Barbarian Features table."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

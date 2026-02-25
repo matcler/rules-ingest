@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_15_improved_elemental_fury|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_15_improved_elemental_fury"
+  },
+  "text": {
+    "raw": "Level 15: Improved Elemental Fury\n\nThe option you chose for Elemental Fury grows\nmore powerful, as detailed below.\nPotent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s\nrange increases by 300 feet.\nPrimal Strike. The extra damage of your Primal\nStrike increases to 2d8."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

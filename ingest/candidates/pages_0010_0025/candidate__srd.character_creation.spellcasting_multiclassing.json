@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|spellcasting_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.spellcasting_multiclassing"
+  },
+  "text": {
+    "raw": "Spellcasting\n\nYour capacity for spellcasting depends partly on\nyour combined levels in all your spellcasting classes\nand partly on your individual levels in those classes.\nOnce you have the Spellcasting feature from more\nthan one class, use the rules below. If you multiclass\nbut have the Spellcasting feature from only one\nclass, follow the rules for that class.\nSpells Prepared. You determine what spells you\ncan prepare for each class individually, as if you\nwere a single-classed member of that class. If you\nare a level 4 Ranger / level 3 Sorcerer, for example,\nyou can prepare five level 1 Ranger spells, and you\ncan prepare six Sorcerer spells of level 1 or 2 (as\nwell as four Sorcerer cantrips).\nEach spell you prepare is associated with one of\nyour classes, and you use the spellcasting ability of\nthat class when you cast the spell.\nCantrips. If a cantrip of yours increases in power\nat higher levels, the increase is based on your total\ncharacter level, not your level in a particular class,\nunless the spell says otherwise.\nSpell Slots. You determine your available spell\nslots by adding together the following:\n• All your levels in the Bard, Cleric, Druid, Sorcerer,\nand Wizard classes\n• Half your levels (round up) in the Paladin and\nRanger classes\n\nThen look up this total level in the Level column of\nthe Multiclass Spellcaster table. You use the slots for\nthat level to cast spells of an appropriate level from\nany class whose Spellcasting feature you have.\nThis table might give you spell slots of a higher\nlevel than the spells you prepare. You can use those\nslots but only to cast your lower-level spells. If a\nlower-level spell that you cast, like Burning Hands,\nhas an enhanced effect when cast at a higher level,\nyou can use the enhanced effect as normal.\nFor example, if you are a level 4 Ranger / level 3\nSorcerer, you count as a level 5 character when determining your spell slots, counting all your levels\nas a Sorcerer and half your Ranger levels. As shown"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

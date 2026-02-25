@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_5_fast_movement|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_5_fast_movement"
+  },
+  "text": {
+    "raw": "Level 5: Fast Movement\n\nYour speed increases by 10 feet while you aren’t\nwearing Heavy armor."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

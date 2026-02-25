@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_2_wild_companion|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_2_wild_companion"
+  },
+  "text": {
+    "raw": "Level 2: Wild Companion\n\nYou can summon a nature spirit that assumes an\nanimal form to aid you. As a Magic action, you can\nexpend a spell slot or a use of Wild Shape to cast the\nFind Familiar spell without Material components.\nWhen you cast the spell in this way, the familiar is\nFey and disappears when you finish a Long Rest."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_wild_shape_rules_while_shape_shifted|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_wild_shape_rules_while_shape_shifted"
+  },
+  "text": {
+    "raw": "Rules While Shape-Shifted. While in a form, you\nretain your personality, memories, and ability to\nspeak, and the following rules apply:\n\nTemporary Hit Points. When you assume a Wild\nShape form, you gain a number of Temporary Hit\nPoints equal to your Druid level.\nGame Statistics. Your game statistics are replaced\nby the Beast’s stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence,\nWisdom, and Charisma scores; class features;\nlanguages; and feats. You also retain your skill\nand saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the\nproficiencies of the creature. If a skill or saving\nthrow modifier in the Beast’s stat block is higher\nthan yours, use the one in the stat block.\nNo Spellcasting. You can’t cast spells, but shapeshifting doesn’t break your Concentration or otherwise interfere with a spell you’ve already cast.\nObjects. Your ability to handle objects is determined by the form’s limbs rather than your own.\nIn addition, you choose whether your equipment\nfalls in your space, merges into your new form, or\nis worn by it. Worn equipment functions as normal, but the GM decides whether it’s practical for\nthe new form to wear a piece of equipment based\non the creature’s size and shape. Your equipment\ndoesn’t change size or shape to match the new\nform, and any equipment that the new form can’t\nwear must either fall to the ground or merge with\nthe form. Equipment that merges with the form\nhas no effect while you’re in that form."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

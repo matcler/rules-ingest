@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|your_turn|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 13,
+    "pageEnd": 13,
+    "ref": "srd.combat.your_turn"
+  },
+  "text": {
+    "raw": "Your Turn\n\nOn your turn, you can move a distance up to your\nSpeed and take one action. You decide whether to\nmove first or take your action first.\nThe main actions you can take are listed in “Actions” earlier in “Playing the Game.” A character’s\nfeatures and a monster’s stat block also provide\naction options. “Movement and Position” later in\n“Playing the Game” gives the rules for movement.\nCommunicating. You can communicate however\nyou are able—through brief utterances and gestures—as you take your turn. Doing so uses neither\nyour action nor your move.\nExtended communication, such as a detailed explanation of something or an attempt to persuade a\nfoe, requires an action. The Influence action is the\nmain way you try to influence a monster.\nInteracting with Things. You can interact with\none object or feature of the environment for free,\nduring either your move or action. For example, you\ncould open a door during your move as you stride\ntoward a foe.\nIf you want to interact with a second object, you\nneed to take the Utilize action. Some magic items\nand other special objects always require an action\nto use, as stated in their descriptions."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

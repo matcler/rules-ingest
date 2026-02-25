@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|death_saving_throws|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 17,
+    "pageEnd": 18,
+    "ref": "srd.combat.death_saving_throws"
+  },
+  "text": {
+    "raw": "Death Saving Throws\n\nWhenever you start your turn with 0 Hit Points,\nyou must make a Death Saving Throw to determine\nwhether you creep closer to death or hang on to life.\nUnlike other saving throws, this one isn’t tied to an\nability score. You’re in the hands of fate now.\nThree Successes/Failures. Roll 1d20. If the roll\nis 10 or higher, you succeed. Otherwise, you fail. A\nsuccess or failure has no effect by itself. On your\nthird success, you become Stable (see “Stabilizing a\nCharacter” below). On your third failure, you die.\nThe successes and failures don’t need to be consecutive; keep track of both until you collect three\nof a kind. The number of both is reset to zero when\nyou regain any Hit Points or become Stable.\n\nRolling a 1 or 20. When you roll a 1 on the d20\nfor a Death Saving Throw, you suffer two failures. If\nyou roll a 20 on the d20, you regain 1 Hit Point.\nDamage at 0 Hit Points. If you take any damage\nwhile you have 0 Hit Points, you suffer a Death Saving Throw failure. If the damage is from a Critical\nHit, you suffer two failures instead. If the damage\nequals or exceeds your Hit Point maximum, you die.\n\nStabilizing a Character\n\nYou can take the Help action to try to stabilize a\ncreature with 0 Hit Points, which requires a successful DC 10 Wisdom (Medicine) check.\nA Stable creature doesn’t make Death Saving\nThrows even though it has 0 Hit Points, but it still\nhas the Unconscious condition. If the creature takes\ndamage, it stops being Stable and starts making\nDeath Saving Throws again. A Stable creature that\nisn’t healed regains 1 Hit Point after 1d4 hours."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

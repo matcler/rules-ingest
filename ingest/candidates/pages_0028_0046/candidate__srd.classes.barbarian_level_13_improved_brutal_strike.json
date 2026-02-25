@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_13_improved_brutal_strike|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_13_improved_brutal_strike"
+  },
+  "text": {
+    "raw": "Level 13: Improved Brutal Strike\n\nYou have honed new ways to attack furiously. The\nfollowing effects are now among your Brutal Strike\noptions.\nStaggering Blow. The target has Disadvantage on\nthe next saving throw it makes, and it can’t make\nOpportunity Attacks until the start of your next\nturn.\nSundering Blow. Before the start of your next\nturn, the next attack roll made by another creature\nagainst the target gains a +5 bonus to the roll. An\nattack roll can gain only one Sundering Blow bonus."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_7_instinctive_pounce|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_7_instinctive_pounce"
+  },
+  "text": {
+    "raw": "Level 7: Instinctive Pounce\n\nAs part of the Bonus Action you take to enter your\nRage, you can move up to half your Speed."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_circle_of_the_land_level_3_spells|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_circle_of_the_land_level_3_spells"
+  },
+  "text": {
+    "raw": "Level 3: Circle of the Land Spells\n\nWhenever you finish a Long Rest, choose one type\nof land: arid, polar, temperate, or tropical. Consult\nthe table below that corresponds to the chosen\ntype; you have the spells listed for your Druid level\nand lower prepared.\n\nArid Land\n\nDruid Level\n\nCircle Spells\n\n\nBlur, Burning Hands, Fire Bolt\n\n\nFireball\n\n\nBlight\n\n\nWall of Stone\n\nPolar Land\nDruid Level\n\nCircle Spells\n\n\nFog Cloud, Hold Person, Ray of Frost\n\n\nSleet Storm\n\n\nIce Storm\n\n\nCone of Cold\n\nTemperate Land\nDruid Level\n\nCircle Spells\n\n\nMisty Step, Shocking Grasp, Sleep\n\n\nLightning Bolt\n\n\nFreedom of Movement\n\n\nTree Stride\n\nTropical Land\nDruid Level\n\n\nCircle Spells\n\n\nAcid Splash, Ray of Sickness, Web\n\n\nStinking Cloud\n\n\nPolymorph\n\n\nInsect Plague"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

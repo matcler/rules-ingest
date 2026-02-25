@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|travel|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 12,
+    "pageEnd": 12,
+    "ref": "srd.playing_the_game.travel"
+  },
+  "text": {
+    "raw": "Travel\nDuring an adventure, the characters might travel\nlong distances on trips that could take hours or\ndays. The GM can summarize this travel without\ncalculating exact distances or travel times, or the\nGM might have you use the travel pace rules below.\nIf you need to know how fast you can move when\nevery second matters, see the movement rules in\n“Combat” later in “Playing the Game.”\n\nTravel Pace\n\nWhile traveling outside combat, a group can move\nat a Fast, Normal, or Slow pace, as shown on the\nTravel Pace table. The table states how far the\nparty can move in a period of time; if riding horses\nor other mounts, the group can move twice that\ndistance for 1 hour, after which the mounts need a\nShort or Long Rest before they can move at that increased pace again (see “Equipment” for a selection\nof mounts for sale). “Gameplay Toolbox” has rules\nthat affect which pace you can choose in certain\ntypes of terrain.\n\nTravel Pace\n\nDistance Traveled Per …\nPace\n\nMinute\n\nHour\n\nDay\n\nFast\n\n400 feet\n\n4 miles\n\n30 miles\n\nNormal\n\n300 feet\n\n3 miles\n\n24 miles\n\nSlow\n\n200 feet\n\n2 miles\n\n18 miles\n\nEach travel pace has a game effect, as defined below.\nFast. Traveling at a Fast pace imposes Disadvantage on a traveler’s Wisdom (Perception or Survival) and Dexterity (Stealth) checks.\nNormal. Traveling at a Normal pace imposes Disadvantage on Dexterity (Stealth) checks.\nSlow. Traveling at a Slow pace grants Advantage\non Wisdom (Perception or Survival) checks.\n\nVehicles\n\nTravelers in wagons, carriages, or other land vehicles choose a pace as normal. Characters in a waterborne vessel are limited to the speed of the vessel,\nand they don’t choose a travel pace. Depending on\nthe vessel and the size of the crew, ships might be\nable to travel for up to 24 hours per day. “Equipment” includes vehicles for sale."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

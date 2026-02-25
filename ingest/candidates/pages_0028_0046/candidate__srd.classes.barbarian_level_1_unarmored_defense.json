@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_1_unarmored_defense|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_1_unarmored_defense"
+  },
+  "text": {
+    "raw": "Level 1: Unarmored Defense\n\nWhile you aren’t wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain\nthis benefit."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

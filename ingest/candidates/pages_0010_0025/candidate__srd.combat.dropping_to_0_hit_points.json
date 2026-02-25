@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|dropping_to_0_hit_points|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 17,
+    "pageEnd": 17,
+    "ref": "srd.combat.dropping_to_0_hit_points"
+  },
+  "text": {
+    "raw": "Dropping to 0 Hit Points\n\nWhen a creature drops to 0 Hit Points, it either dies\noutright or falls unconscious, as explained below.\n\nInstant Death\n\nHere are the main ways a creature can die instantly.\nMonster Death. A monster dies the instant it\ndrops to 0 Hit Points, although a Game Master can\nignore this rule for an individual monster and treat\nit like a character.\nHit Point Maximum of 0. A creature dies if its Hit\nPoint maximum reaches 0. Certain effects drain life\nenergy, reducing a creature’s Hit Point maximum.\nMassive Damage. When damage reduces a character to 0 Hit Points and damage remains, the character dies if the remainder equals or exceeds their\nHit Point maximum. For example, if your character\nhas a Hit Point maximum of 12, currently has 6 Hit\nPoints, and takes 18 damage, the character drops to\n0 Hit Points, but 12 damage remains. The character\nthen dies, since 12 equals their Hit Point maximum.\n\nCharacter Demise\n\nIf your character dies, others might find a magical\nway to revive your character, such as with the Raise\nDead spell. Or talk with the GM about making a new\ncharacter to join the group. “Rules Glossary” has\nmore information on being dead.\n\nFalling Unconscious\n\nIf you reach 0 Hit Points and don’t die instantly, you\nhave the Unconscious condition (see “Rules Glossary”) until you regain any Hit Points, and you now\nface making Death Saving Throws (see below)."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

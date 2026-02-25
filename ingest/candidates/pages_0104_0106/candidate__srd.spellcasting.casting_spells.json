@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|casting_spells|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 104,
+    "pageEnd": 104,
+    "ref": "srd.spellcasting.casting_spells"
+  },
+  "text": {
+    "raw": "Casting Spells\n\nEach spell description has a series of entries that\nprovide the details needed to cast the spell. The following sections explain each of those entries, which\nfollow a spell’s name."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

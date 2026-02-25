@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_18_indomitable_might|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_18_indomitable_might"
+  },
+  "text": {
+    "raw": "Level 18: Indomitable Might\n\nIf your total for a Strength check or Strength saving\nthrow is less than your Strength score, you can use\nthat score in place of the total."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

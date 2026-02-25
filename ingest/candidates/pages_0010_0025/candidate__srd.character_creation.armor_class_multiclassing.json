@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|armor_class_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.armor_class_multiclassing"
+  },
+  "text": {
+    "raw": "Armor Class\n\nIf you have multiple ways to calculate your Armor\nClass, you can benefit from only one at a time.\nFor example, a Monk/Sorcerer with a Monk’s\n\n\n\nUnarmored Defense feature and a Sorcerer’s Draconic Resilience feature must choose only one of\nthose features as a way to calculate Armor Class."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

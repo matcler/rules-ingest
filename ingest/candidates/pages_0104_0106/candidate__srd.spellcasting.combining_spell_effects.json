@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|combining_spell_effects|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 106,
+    "pageEnd": 106,
+    "ref": "srd.spellcasting.combining_spell_effects"
+  },
+  "text": {
+    "raw": "Combining Spell Effects\nThe effects of different spells add together while\ntheir durations overlap. In contrast, the effects of\nthe same spell cast multiple times don’t combine.\nInstead, the most potent effect—such as the highest bonus—from those castings applies while their\ndurations overlap. The most recent effect applies if\nthe castings are equally potent and their durations\noverlap. For example, if two Clerics cast Bless on\nthe same target, that target gains the spell’s benefit\nonly once; the target doesn’t receive two bonus dice.\nBut if the durations of the spells overlap, the effect\ncontinues until the duration of the second Bless\nends."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

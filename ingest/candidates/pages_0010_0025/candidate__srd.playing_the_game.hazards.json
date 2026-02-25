@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hazards|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 12,
+    "pageEnd": 12,
+    "ref": "srd.playing_the_game.hazards"
+  },
+  "text": {
+    "raw": "Hazards\nMonsters are the main perils characters face, but\nother dangers await. “Rules Glossary” defines the\nfollowing hazards:\nBurning\nDehydration\n\nFalling\nMalnutrition\n\nSuffocation"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

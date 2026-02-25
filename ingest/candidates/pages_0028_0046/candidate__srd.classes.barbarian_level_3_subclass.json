@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_3_subclass|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_3_subclass"
+  },
+  "text": {
+    "raw": "Level 3: Barbarian Subclass\n\nYou gain a Barbarian subclass of your choice. The\nPath of the Berserker subclass is detailed after this\nclass’s description. A subclass is a specialization\nthat grants you features at certain Barbarian levels.\nFor the rest of your career, you gain each of your\nsubclass’s features that are of your Barbarian level\nor lower."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

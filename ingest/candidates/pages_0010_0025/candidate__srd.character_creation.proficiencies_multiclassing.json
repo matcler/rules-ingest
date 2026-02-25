@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|proficiencies_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.proficiencies_multiclassing"
+  },
+  "text": {
+    "raw": "Proficiencies\n\nWhen you gain your first level in a class other than\nyour initial class, you gain only some of the new\nclass’s starting proficiencies, as detailed in each\nclass’s description in “Classes.”"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

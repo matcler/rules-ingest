@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_04|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 12,
+    "pageEnd": 12,
+    "ref": "srd.playing_the_game.hot_rule_04"
+  },
+  "text": {
+    "raw": "When time is short, such as in combat, interactions\nwith objects are limited: one free interaction per\nturn. That interaction must occur during a creature’s movement or action. Any additional interactions require the Utilize action, as explained in\n“Combat” later in “Playing the Game.”"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_3_subclass|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 32,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_3_subclass"
+  },
+  "text": {
+    "raw": "Level 3: Bard Subclass\n\nYou gain a Bard subclass of your choice. The College\nof Lore subclass is detailed after this class’s description. A subclass is a specialization that grants you\nfeatures at certain Bard levels. For the rest of your\ncareer, you gain each of your subclass’s features\nthat are of your Bard level or lower."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

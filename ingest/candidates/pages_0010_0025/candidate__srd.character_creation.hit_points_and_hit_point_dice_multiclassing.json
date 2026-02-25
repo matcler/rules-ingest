@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|hit_points_and_hit_point_dice_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.hit_points_and_hit_point_dice_multiclassing"
+  },
+  "text": {
+    "raw": "Hit Points and Hit Point Dice\n\nYou gain the Hit Points from your new class as described for levels after 1. You gain the level 1 Hit\nPoints for a class only when your total character\nlevel is 1.\nAdd together the Hit Dice granted by all your\nclasses to form your pool of Hit Dice. If these dice\nare the same die type, you can pool them together.\nFor example, both the Fighter and the Paladin have\na d10 Hit Die, so if you are a level 5 Fighter / level 5\nPaladin, you have ten d10 Hit Dice. If your classes\ngive you Hit Dice of different types, track them separately. If you are a level 5 Cleric / level 5 Paladin,\nfor example, you have five d8 Hit Dice and five d10\nHit Dice."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

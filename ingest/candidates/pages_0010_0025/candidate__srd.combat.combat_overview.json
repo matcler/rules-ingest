@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|combat_overview|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 13,
+    "pageEnd": 13,
+    "ref": "srd.combat.combat_overview"
+  },
+  "text": {
+    "raw": "Combat\nAdventurers encounter many dangerous monsters\nand nefarious villains. In those moments, combat\noften breaks out.\n\nThe Order of Combat\n\nA typical combat encounter is a clash between two\nsides: a flurry of weapon swings, feints, parries,\nfootwork, and spellcasting. The game organizes\ncombat into a cycle of rounds and turns. A round\nrepresents about 6 seconds in the game world.\nDuring a round, each participant in a battle takes a\nturn. The order of turns is determined at the beginning of combat when everyone rolls Initiative. Once\neveryone has taken a turn, the fight continues to the\nnext round if neither side is defeated."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|character_creation_overview|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 19,
+    "pageEnd": 19,
+    "ref": "srd.character_creation.character_creation_overview"
+  },
+  "text": {
+    "raw": "Character\nCreation\nChoose a Character Sheet\n\nWarlock\n\nOccult lore\n\nCharisma\n\nHigh\n\nWizard\n\nSpellbooks\n\nIntelligence\n\nAverage\n\nYou’ll record the main details of your character on\na character sheet. Throughout this chapter, we use\nthe term “character sheet” to mean whatever you\nuse to track your character’s details, whether it’s a\nprinted character sheet, a digital character sheet, or\nplain paper. Choose whichever style of sheet works\nfor you, and then embark on creating a character!\n\nCreate Your Character\n\nHere are the steps to make a character; each step is\nexplored in detail:\n\n1: \u0007Choose a Class. Every adventurer is a member\nof a class. A class broadly describes a character’s\nvocation, special talents, and favored tactics.\n2: \u0007Determine Origin. A character’s origin includes\ntwo elements: background and species. How did\nthe character spend the years leading up to a life\nof adventure? Who are the character’s ancestors?\nYou can also choose your character’s languages.\n3: Determine Ability Scores. Much of what your\ncharacter does in the game depends on the character’s six abilities.\n4: \u0007Choose an Alignment. Alignment is a shorthand\nfor your character’s moral compass.\n5: Fill in Details. Using the choices you’ve made, fill\nin the remaining details on your character sheet."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

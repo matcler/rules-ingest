@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_17_improved_brutal_strike|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_17_improved_brutal_strike"
+  },
+  "text": {
+    "raw": "Level 17: Improved Brutal Strike\n\nThe extra damage of your Brutal Strike increases to\n2d10. In addition, you can use two different Brutal\nStrike effects whenever you use your Brutal Strike\nfeature."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

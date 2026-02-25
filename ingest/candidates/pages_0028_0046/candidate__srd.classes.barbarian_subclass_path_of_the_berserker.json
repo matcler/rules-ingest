@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_subclass_path_of_the_berserker|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_subclass_path_of_the_berserker"
+  },
+  "text": {
+    "raw": "Barbarian Subclass:\nPath of the Berserker\nChannel Rage into Violent Fury\n\nBarbarians who walk the Path of the Berserker\ndirect their Rage primarily toward violence. Their\npath is one of untrammeled fury, and they thrill in\nthe chaos of battle as they allow their Rage to seize\nand empower them."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

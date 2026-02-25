@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|ending_combat|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 14,
+    "pageEnd": 14,
+    "ref": "srd.combat.ending_combat"
+  },
+  "text": {
+    "raw": "Ending Combat\n\nCombat ends when one side or the other is defeated,\nwhich can mean the creatures are killed or knocked\nout or have surrendered or fled. Combat can also\nend when both sides agree to end it."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

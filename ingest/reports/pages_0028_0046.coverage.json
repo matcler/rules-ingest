@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "totalCandidates": 67,
+    "candidatesWithAtoms": 0,
+    "candidatesZeroAtoms": 67,
+    "totalAtoms": 0
+  },
+  "atomTypesUsed": {},
+  "unrepresentableClasses": [
+    {
+      "classId": "UNREPRESENTABLE_WITH_MVP_ATOMS",
+      "count": 67,
+      "examples": [
+        "srd.classes.barbarian_berserker_level_10_retaliation",
+        "srd.classes.barbarian_berserker_level_14_intimidating_presence",
+        "srd.classes.barbarian_berserker_level_3_frenzy"
+      ]
+    }
+  ],
+  "failures": []
+}

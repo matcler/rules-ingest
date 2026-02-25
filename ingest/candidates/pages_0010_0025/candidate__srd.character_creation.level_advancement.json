@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|level_advancement|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 23,
+    "pageEnd": 23,
+    "ref": "srd.character_creation.level_advancement"
+  },
+  "text": {
+    "raw": "Level Advancement\n\nWhile going on adventures, your character gains experience, represented by Experience Points (XP). A\ncharacter who reaches a specified Experience Point\ntotal advances in capability. This advancement is\ncalled gaining a level.\nThe Character Advancement table lists the XP\nyou need to advance to a level and the Proficiency\nBonus for a character of that level. When your XP\ntotal equals or exceeds a number in the Experience\nPoints column, you reach the corresponding level.\n\nCharacter Advancement\nLevel\n\n\nExperience Points\n\nProficiency Bonus\n\n\n\n+2\n\n\n\n+2\n\n\n\n+2\n\n\n2,700\n\n+2\n\n\n6,500\n\n+3\n\n\n14,000\n\n+3\n\n\n23,000\n\n+3\n\n\n34,000\n\n+3\n\n\n48,000\n\n+4\n\n\n64,000\n\n+4\n\n\n85,000\n\n+4\n\n\n100,000\n\n+4\n\n\n120,000\n\n+5\n\n\n140,000\n\n+5\n\n\n165,000\n\n+5\n\n\n195,000\n\n+5\n\n\n225,000\n\n+6\n\n\n265,000\n\n+6\n\n\n305,000\n\n+6\n\n\n355,000\n\n+6\n\n\nGaining a Level\nWhen you gain a level, follow these steps:\n\n1: Choose a Class. Most characters advance in the\nsame class. However, you might decide to gain a\nlevel in another class using the rules in the “Multiclassing” section.\n2: Adjust Hit Points and Hit Point Dice. Each time\nyou gain a level, you gain an additional Hit Die.\nRoll that die, add your Constitution modifier to\nthe roll, and add the total (minimum of 1) to your\nHit Point maximum. Instead of rolling, you can\nuse the fixed value shown in the Fixed Hit Points\nby Class table.\n\nFixed Hit Points by Class\nClass\n\nHit Points per Level\n\nBarbarian\n\n7 + Con. modifier\n\nFighter, Paladin, or Ranger\n\n6 + Con. modifier\n\nBard, Cleric, Druid, Monk,\nRogue, or Warlock\n\n5 + Con. modifier\n\nSorcerer or Wizard\n\n4 + Con. modifier\n\n3: Record New Class Features. Look at your class\nfeatures table in “Classes,” and note the features\nyou gain at your new level in that class. Make any\nchoices offered by a new feature.\n4: Adjust Proficiency Bonus. A character’s Proficiency Bonus increases at certain levels, as\nshown in the Character Advancement table and\nyour class features table in “Classes.” When your\nProficiency Bonus increases, increase all the\nnumbers on your character sheet that include\nyour Proficiency Bonus.\n5: Adjust Ability Modifiers. If you choose a feat\nthat increases one or more of your ability scores,\nyour ability modifier also changes if the new\nscore is an even number. When that happens, adjust all the numbers on your character sheet that\nuse that ability modifier. When your Constitution\nmodifier increases by 1, your Hit Point maximum\nincreases by 1 for each level you have attained.\nFor example, if a character reaches level 8 and\nincreases their Constitution score from 17 to 18,\nthe Constitution modifier increases to +4. The\ncharacter’s Hit Point maximum then increases by\n8, in addition to the Hit Points gained for reaching level 8."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

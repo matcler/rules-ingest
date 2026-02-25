@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_15_persistent_rage|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_15_persistent_rage"
+  },
+  "text": {
+    "raw": "Level 15: Persistent Rage\n\nWhen you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage\nin this way, you can’t do so again until you finish a\nLong Rest.\nIn addition, your Rage is so fierce that it now lasts\nfor 10 minutes without you needing to do anything\nto extend it from round to round. Your Rage ends\nearly if you have the Unconscious condition (not just\nthe Incapacitated condition) or don Heavy armor."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

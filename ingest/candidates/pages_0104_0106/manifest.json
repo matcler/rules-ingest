@@ -1,0 +1,13 @@
+[
+  "candidate__srd.spellcasting.casting_spells.json",
+  "candidate__srd.spellcasting.casting_in_armor.json",
+  "candidate__srd.spellcasting.casting_time.json",
+  "candidate__srd.spellcasting.one_spell_with_slot_per_turn.json",
+  "candidate__srd.spellcasting.reaction_and_bonus_action_triggers.json",
+  "candidate__srd.spellcasting.longer_casting_times.json",
+  "candidate__srd.spellcasting.targets.json",
+  "candidate__srd.spellcasting.saving_throws.json",
+  "candidate__srd.spellcasting.attack_rolls.json",
+  "candidate__srd.spellcasting.combining_spell_effects.json",
+  "candidate__srd.spellcasting.identifying_an_ongoing_spell.json"
+]

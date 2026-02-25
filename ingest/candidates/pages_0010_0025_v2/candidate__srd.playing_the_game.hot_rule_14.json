@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_14|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 16,
+    "pageEnd": 16,
+    "ref": "srd.playing_the_game.hot_rule_14"
+  },
+  "text": {
+    "raw": "If an effect is about to move your mount against its\nwill while you’re on it, you must succeed on a DC 10\nDexterity saving throw or fall off, landing with the\nProne condition (see “Rules Glossary”) in an unoccupied space within 5 feet of the mount.\nWhile mounted, you must make the same save if\nyou’re knocked Prone or the mount is."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

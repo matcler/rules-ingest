@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_5_wild_resurgence|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_5_wild_resurgence"
+  },
+  "text": {
+    "raw": "Level 5: Wild Resurgence\nOnce on each of your turns, if you have no uses of\nWild Shape left, you can give yourself one use by expending a spell slot (no action required).\nIn addition, you can expend one use of Wild Shape\n(no action required) to give yourself a level 1 spell\nslot, but you can’t do so again until you finish a Long\nRest."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

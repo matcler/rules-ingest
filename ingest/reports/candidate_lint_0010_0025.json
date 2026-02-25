@@ -1,0 +1,15 @@
+{
+  "pages": {
+    "path": "ingest/text/pages_0010_0025.txt",
+    "start": 10,
+    "end": 25
+  },
+  "candidates_dir": "ingest/candidates/pages_0010_0025_v2",
+  "counts": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_18_beast_spells|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_18_beast_spells"
+  },
+  "text": {
+    "raw": "Level 18: Beast Spells\n\nWhile using Wild Shape, you can cast spells in Beast\nform, except for any spell that has a Material component with a cost specified or that consumes its\nMaterial component."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|ability_checks|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 11,
+    "pageEnd": 11,
+    "ref": "srd.playing_the_game.ability_checks"
+  },
+  "text": {
+    "raw": "Ability Checks\n\nAbility checks can be key in determining the outcome of a social interaction. Your roleplaying efforts\ncan alter an NPC’s attitude, but there might still be\nan element of chance if the GM wants dice to play\na role in determining an NPC’s response to you. In\nsuch situations, the GM will typically ask you to\ntake the Influence action.\nPay attention to your skill proficiencies when\nthinking of how you will interact with an NPC; use\nan approach that relies on your group’s skill proficiencies. For example, if the group needs to trick\na guard into letting them into a castle, the Rogue\nwho is proficient in Deception should lead the\ndiscussion."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

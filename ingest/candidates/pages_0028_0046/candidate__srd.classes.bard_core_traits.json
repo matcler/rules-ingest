@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_core_traits|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 31,
+    "pageEnd": 31,
+    "ref": "srd.classes.bard_core_traits"
+  },
+  "text": {
+    "raw": "Bard\n\n• Gain the Bard’s level 1 features, which are listed\nin the Bard Features table.\n\nCore Bard Traits\n\nAs a Multiclass Character\n\nPrimary Ability\n\nCharisma\n\nHit Point Die\n\nD8 per Bard level\n\nSaving Throw\nProficiencies\n\nDexterity and Charisma\n\nSkill Proficiencies\n\nChoose any 3 skills (see “Playing\nthe Game”)\n\nWeapon Proficiencies Simple weapons\nTool Proficiencies\n\nChoose 3 Musical Instruments\n(see “Equipment”)\n\nArmor Training\n\nLight armor\n\nStarting Equipment\n\nChoose A or B: (A) Leather\nArmor, 2 Daggers, Musical\nInstrument of your choice, Entertainer’s Pack, and 19 GP; or\n(B) 90 GP"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

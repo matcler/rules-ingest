@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|experience_points_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.experience_points_multiclassing"
+  },
+  "text": {
+    "raw": "Experience Points\n\nThe Experience Point cost to gain a level is based on\nyour total character level, not your level in a particular class, as shown in the Character Advancement\ntable in “Character Creation.” For example, if you\nare a level 6 Cleric / level 1 Fighter, you must gain\nenough XP to reach level 8 before you can take your\nsecond level as a Fighter or your seventh level as a\nCleric."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

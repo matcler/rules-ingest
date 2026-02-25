@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_3_subclass|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_3_subclass"
+  },
+  "text": {
+    "raw": "Level 3: Druid Subclass\n\nYou gain a Druid subclass of your choice. The Circle\nof the Land subclass is detailed after this class’s description. A subclass is a specialization that grants\nyou features at certain Druid levels. For the rest of\nyour career, you gain each of your subclass’s features that are of your Druid level or lower."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_circle_of_the_land_level_10_natures_ward|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_circle_of_the_land_level_10_natures_ward"
+  },
+  "text": {
+    "raw": "Level 10: Nature’s Ward\n\nYou are immune to the Poisoned condition, and you\nhave Resistance to a damage type associated with\nyour current land choice in the Circle Spells feature,\nas shown in the Nature’s Ward table.\n\nNature’s Ward\nLand Type\n\nResistance\n\nLand Type\n\nResistance\n\nArid\n\nFire\n\nTemperate\n\nLightning\n\nPolar\n\nCold\n\nTropical\n\nPoison"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

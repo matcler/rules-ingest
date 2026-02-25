@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_circle_of_the_land_level_14_natures_sanctuary|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_circle_of_the_land_level_14_natures_sanctuary"
+  },
+  "text": {
+    "raw": "Level 14: Nature’s Sanctuary\nAs a Magic action, you can expend a use of your Wild\nShape and cause spectral trees and vines to appear\nin a 15-foot Cube on the ground within 120 feet of\nyourself. They last there for 1 minute or until you\nhave the Incapacitated condition or die. You and\nyour allies have Half Cover while in that area, and\nyour allies gain the current Resistance of your Nature’s Ward while there.\nAs a Bonus Action, you can move the Cube up to\n60 feet to ground within 120 feet of yourself."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

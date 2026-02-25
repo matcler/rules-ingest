@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_circle_of_the_land_level_3_lands_aid|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_circle_of_the_land_level_3_lands_aid"
+  },
+  "text": {
+    "raw": "Level 3: Land’s Aid\nAs a Magic action, you can expend a use of your Wild\nShape and choose a point within 60 feet of yourself.\nVitality-giving flowers and life-draining thorns\nappear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in\nthe Sphere must make a Constitution saving throw\nagainst your spell save DC, taking 2d6 Necrotic\ndamage on a failed save or half as much damage on\na successful one. One creature of your choice in that\narea regains 2d6 Hit Points.\nThe damage and healing increase by 1d6 when\nyou reach Druid levels 10 (3d6) and 14 (4d6)."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

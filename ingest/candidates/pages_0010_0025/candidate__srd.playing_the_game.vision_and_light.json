@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|vision_and_light|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 11,
+    "pageEnd": 11,
+    "ref": "srd.playing_the_game.vision_and_light"
+  },
+  "text": {
+    "raw": "Vision and Light\nSome adventuring tasks—such as noticing danger,\nhitting an enemy, and targeting certain spells—are\naffected by sight, so effects that obscure vision can\nhinder you, as explained below.\n\nObscured Areas\n\nAn area might be Lightly or Heavily Obscured. In a\nLightly Obscured area—such as an area with Dim\nLight, patchy fog, or moderate foliage—you have\nDisadvantage on Wisdom (Perception) checks that\nrely on sight.\nA Heavily Obscured area—such as an area with\nDarkness, heavy fog, or dense foliage—is opaque.\nYou have the Blinded condition (see “Rules Glossary”) when trying to see something there.\n\nLight\n\nThe presence or absence of light determines the category of illumination in an area, as defined below.\nBright Light. Bright Light lets most creatures see\nnormally. Even gloomy days provide Bright Light, as\ndo torches, lanterns, fires, and other sources of illumination within a specific radius.\nDim Light. Dim Light, also called shadows, creates a Lightly Obscured area. An area of Dim Light\nis usually a boundary between Bright Light and\nsurrounding Darkness. The soft light of twilight and\ndawn also counts as Dim Light. A full moon might\nbathe the land in Dim Light.\nDarkness. Darkness creates a Heavily Obscured\narea. Characters face Darkness outdoors at night\n(even most moonlit nights), within the confines of\nan unlit dungeon, or in an area of magical Darkness.\n\nSpecial Senses\n\nSome creatures have special senses that help them\nperceive things in certain situations. “Rules Glossary” defines the following special senses:\nBlindsight\nDarkvision\nTremorsense\nTruesight\n\nHiding\nAdventurers and monsters often hide, whether to\nspy on one another, sneak past a guardian, or set an\nambush. The Game Master decides when circumstances are appropriate for hiding. When you try to\nhide, you take the Hide action."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

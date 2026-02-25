@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_berserker_level_3_frenzy|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_berserker_level_3_frenzy"
+  },
+  "text": {
+    "raw": "Level 3: Frenzy\n\nIf you use Reckless Attack while your Rage is active,\nyou deal extra damage to the first target you hit on\nyour turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal\nto your Rage Damage bonus, and add them together.\nThe damage has the same type as the weapon or\nUnarmed Strike used for the attack."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|tiers_of_play|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 23,
+    "pageEnd": 24,
+    "ref": "srd.character_creation.tiers_of_play"
+  },
+  "text": {
+    "raw": "Tiers of Play\n\nWith each new level, characters acquire new capabilities that equip them to handle greater challenges. As characters advance in level, the tone of\nthe game also changes, and the stakes of the campaign get higher. It’s helpful to think of a character’s\n(and a campaign’s) arc in terms of four tiers of play,\n\ndescribing the journey from a level 1 character just\nbeginning an adventuring career to the epic heights\nof level 20. These tiers don’t have any rules associated with them; they point to the fact that the play\nexperience evolves as characters gain levels.\n\nTier 1 (Levels 1–4)\n\nIn tier 1, characters are apprentice adventurers,\nthough they are already set apart from the broader\npopulace by virtue of their extraordinary abilities.\nThey learn their starting class features and choose\na subclass. The threats they face usually pose a danger to local farmsteads or villages.\n\nTier 2 (Levels 5–10)\n\nIn tier 2, characters are full-fledged adventurers.\nSpellcasters gain iconic spells such as Fireball, Lightning Bolt, and Raise Dead. Most weapon-focused\nclasses gain the ability to make multiple attacks\nin a round. The characters now face dangers that\nthreaten cities and kingdoms.\n\nTier 3 (Levels 11–16)\n\nIn tier 3, characters have reached a level of power\nthat makes them special among adventurers. At\nlevel 11, many spell­casters learn reality-altering\nspells. Other characters gain features that allow\nthem to make more attacks or to do more impressive things with those attacks. These adventurers\noften confront threats to whole regions.\n\nTier 4 (Levels 17–20)\n\nAt tier 4, characters achieve the pinnacle of their\nclass features, becoming heroic archetypes. The\nfate of the world or even the order of the multiverse\nmight hang in the balance during their adventures."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

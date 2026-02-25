@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_19_epic_boon|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_19_epic_boon"
+  },
+  "text": {
+    "raw": "Level 19: Epic Boon\n\nYou gain an Epic Boon feat (see “Feats”) or another\nfeat of your choice for which you qualify. Boon of Dimensional Travel is recommended."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

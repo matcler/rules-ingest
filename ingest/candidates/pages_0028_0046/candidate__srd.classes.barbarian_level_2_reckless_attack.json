@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_2_reckless_attack|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_2_reckless_attack"
+  },
+  "text": {
+    "raw": "Level 2: Reckless Attack\n\nYou can throw aside all concern for defense to attack with increased ferocity. When you make your\nfirst attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next\n\n\n\nturn, but attack rolls against you have Advantage\nduring that time."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

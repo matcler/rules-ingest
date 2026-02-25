@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_1_weapon_mastery|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_1_weapon_mastery"
+  },
+  "text": {
+    "raw": "Level 1: Weapon Mastery\n\nYour training with weapons allows you to use the\nmastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long\nRest, you can practice weapon drills and change one\nof those weapon choices.\nWhen you reach certain Barbarian levels, you gain\nthe ability to use the mastery properties of more\nkinds of weapons, as shown in the Weapon Mastery\ncolumn of the Barbarian Features table."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

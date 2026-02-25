@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|healing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 17,
+    "pageEnd": 17,
+    "ref": "srd.combat.healing"
+  },
+  "text": {
+    "raw": "Healing\n\nHit Points can be restored by magic, such as the\nCure Wounds spell or a Potion of Healing, or by a\nShort or Long Rest (see “Rules Glossary”).\n\nKnocking Out a Creature\n\nWhen you would reduce a creature to 0 Hit Points\nwith a melee attack, you can instead reduce the creature to 1 Hit Point and give it the Unconscious condition. It then starts a Short Rest, at the end of which\nthat condition ends on it. The condition ends early\nif the creature regains any Hit Points or if someone\ntakes an action to administer first aid to it, making a\nsuccessful DC 10 Wisdom (Medicine) check.\n\n\n\nWhen you receive healing, add the restored Hit\nPoints to your current Hit Points. Your Hit Points\ncan’t exceed your Hit Point maximum, so any Hit\nPoints regained in excess of the maximum are lost.\nFor example, if you receive 8 Hit Points of healing\nand have 14 Hit Points and a Hit Point maximum of\n20, you regain 6 Hit Points, not 8."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

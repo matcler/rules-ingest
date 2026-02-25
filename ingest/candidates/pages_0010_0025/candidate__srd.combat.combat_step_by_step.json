@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|combat_step_by_step|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 13,
+    "pageEnd": 13,
+    "ref": "srd.combat.combat_step_by_step"
+  },
+  "text": {
+    "raw": "Combat Step by Step\n\nCombat unfolds in these steps:\n\n1: Establish Positions. The Game Master determines where all the characters and monsters are\nlocated. Given the adventurers’ marching order\nor their stated positions in the room or other location, the GM figures out where the adversaries\nare—how far away and in what direction.\n2: Roll Initiative. Everyone involved in the combat\nencounter rolls Initiative, determining the order\nof combatants’ turns.\n3: Take Turns. Each participant in the battle takes\na turn in Initiative order. When everyone involved in the combat has had a turn, the round\nends. Repeat this step until the fighting stops."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

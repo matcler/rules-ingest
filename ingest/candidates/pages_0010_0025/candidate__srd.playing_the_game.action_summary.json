@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|action_summary|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 10,
+    "pageEnd": 10,
+    "ref": "srd.playing_the_game.action_summary"
+  },
+  "text": {
+    "raw": "Action\n\nSummary\n\nDisengage\n\nYour movement doesn’t provoke Opportunity Attacks for the rest of the turn.\n\nDodge\n\nUntil the start of your next turn, attack\nrolls against you have Disadvantage, and\nyou make Dexterity saving throws with\nAdvantage. You lose this benefit if you\nhave the Incapacitated condition or if your\nSpeed is 0.\n\nHelp\n\nHelp another creature’s ability check or\nattack roll, or administer first aid.\n\nHide\n\nMake a Dexterity (Stealth) check.\n\nInfluence\n\nMake a Charisma (Deception, Intimidation,\nPerformance, or Persuasion) or Wisdom\n(Animal Handling) check to alter a creature’s attitude.\n\nMagic\n\nCast a spell, use a magic item, or use a\nmagical feature.\n\nReady\n\nPrepare to take an action in response to a\ntrigger you define.\n\nSearch\n\nMake a Wisdom (Insight, Medicine,\nPerception, or Survival) check.\n\nStudy\n\nMake an Intelligence (Arcana, History, Investigation, Nature, or Religion) check.\n\nUtilize\n\nUse a nonmagical object.\n\nPlayer characters and monsters can also do things\nnot covered by these actions. Many class features\nand other abilities provide additional action options, and you can improvise other actions. When\nyou describe an action not detailed elsewhere in the\nrules, the Game Master tells you whether that action\nis possible and what kind of D20 Test you need to\nmake, if any."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

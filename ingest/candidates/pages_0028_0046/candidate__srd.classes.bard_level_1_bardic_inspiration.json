@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_1_bardic_inspiration|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 31,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_1_bardic_inspiration"
+  },
+  "text": {
+    "raw": "Level 1: Bardic Inspiration\n\nYou can supernaturally inspire others through\nwords, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.\nUsing Bardic Inspiration. As a Bonus Action, you\ncan inspire another creature within 60 feet of yourself who can see or hear you. That creature gains\n\nLevel\n\nProficiency\nBonus\n\n\n+2\n\nBardic Inspiration,\nSpellcasting\n\nD6\n\n\n\n\n— — — — — — — —\n\n\n+2\n\nExpertise,\nJack of All Trades\n\nD6\n\n\n\n\n— — — — — — — —\n\n\n+2\n\nBard Subclass\n\nD6\n\n\n\n\n\n— — — — — — —\n\n\n+2\n\nAbility Score Improvement\n\nD6\n\n\n\n\n\n— — — — — — —\n\n\n+3\n\nFont of Inspiration\n\nD8\n\n\n\n\n\n\n— — — — — —\n\n\n+3\n\nSubclass feature\n\nD8\n\n\n\n\n\n\n— — — — — —\n\n\n+3\n\nCountercharm\n\nD8\n\n\n\n\n\n\n\n— — — — —\n\n\n+3\n\nAbility Score Improvement\n\nD8\n\n\n\n\n\n\n\n— — — — —\n\n\n+4\n\nExpertise\n\nD8\n\n\n\n\n\n\n\n\n— — — —\n\n\n+4\n\nMagical Secrets\n\nD10\n\n\n\n\n\n\n\n\n— — — —\n\n\n+4\n\n—\n\nD10\n\n\n\n\n\n\n\n\n\n— — —\n\n\n+4\n\nAbility Score Improvement\n\nD10\n\n\n\n\n\n\n\n\n\n— — —\n\n\n+5\n\n—\n\nD10\n\n\n\n\n\n\n\n\n\n\n— —\n\n\n+5\n\nSubclass feature\n\nD10\n\n\n\n\n\n\n\n\n\n\n— —\n\n\n+5\n\n—\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n—\n\n\n+5\n\nAbility Score Improvement\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n—\n\n\n+6\n\n—\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n\n\n+6\n\nSuperior Inspiration\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n\n\n+6\n\nEpic Boon\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n\n\n+6\n\nWords of Creation\n\nD12\n\n\n\n\n\n\n\n\n\n\n\n\nClass Features\n\n\nBardic\nPrepared\nDie\nSpells\nCantrips\n\n——Spell Slots per Spell Level——\n1 2 3 4 5 6 7 8 9\n\none of your Bardic Inspiration dice. A creature can\nhave only one Bardic Inspiration die at a time.\nOnce within the next hour when the creature fails\na D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic\nInspiration die is expended when it’s rolled.\nNumber of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma\nmodifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\nAt Higher Levels. Your Bardic Inspiration die\nchanges when you reach certain Bard levels, as\nshown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at\nlevel 10, and a d12 at level 15."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

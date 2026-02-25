@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|becoming_a_bard|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 31,
+    "pageEnd": 31,
+    "ref": "srd.classes.becoming_a_bard"
+  },
+  "text": {
+    "raw": "Becoming a Bard …\nAs a Level 1 Character\n• Gain all the traits in the Core Bard Traits table.\n\nBard Features\n\n\n• Gain the following traits from the Core Bard\nTraits table: Hit Point Die, proficiency in one skill\nof your choice, proficiency with one Musical Instrument of your choice, and training with Light\narmor.\n• Gain the Bard’s level 1 features, which are listed\nin the Bard Features table. See the multiclassing\nrules in “Character Creation” to determine your\navailable spell slots."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

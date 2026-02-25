@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|ranged_attacks|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.combat.ranged_attacks"
+  },
+  "text": {
+    "raw": "Ranged Attacks\nWhen you make a ranged attack, you fire a bow,\nhurl an axe, or otherwise send projectiles to strike a\nfoe at a distance. Many spells also involve making a\nranged attack.\n\nRange\n\nYou can make ranged attacks only against targets\nwithin a specified range. If a ranged attack, such as\none made with a spell, has a single range, you can’t\nattack a target beyond this range.\n\n\n\nSome ranged attacks, such as those made with a\nLongbow, have two ranges. The smaller number is\nthe normal range, and the larger number is the long\nrange. Your attack roll has Disadvantage when your\ntarget is beyond normal range, and you can’t attack\na target beyond long range.\n\nRanged Attacks in Close Combat\n\nAiming a ranged attack is more difficult when a foe\nis next to you. When you make a ranged attack roll\nwith a weapon, a spell, or some other means, you\nhave Disadvantage on the roll if you are within 5\nfeet of an enemy who can see you and doesn’t have\nthe Incapacitated condition (see “Rules Glossary”)."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

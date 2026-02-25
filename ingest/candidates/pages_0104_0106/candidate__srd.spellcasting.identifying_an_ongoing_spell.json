@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|identifying_an_ongoing_spell|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 106,
+    "pageEnd": 106,
+    "ref": "srd.spellcasting.identifying_an_ongoing_spell"
+  },
+  "text": {
+    "raw": "Identifying an Ongoing Spell\n\nYou can try to identify a non-instantaneous spell by\nits observable effects if its duration is ongoing. To\nidentify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

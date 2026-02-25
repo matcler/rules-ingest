@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|damage_and_healing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 16,
+    "pageEnd": 17,
+    "ref": "srd.combat.damage_and_healing"
+  },
+  "text": {
+    "raw": "Damage and Healing\n\nInjury and death are frequent threats, as detailed in\nthe following rules.\n\nHit Points\n\nHit Points represent durability and the will to live.\nCreatures with more Hit Points are more difficult\nto kill. Your Hit Point maximum is the number of\n\nResting\n\nAdventurers can’t spend every hour adventuring.\nThey need rest. Any creature can take hour-long\nShort Rests in the midst of a day and an 8-hour Long\nRest to end it. Regaining Hit Points is one of the main\nbenefits of a rest. “Rules Glossary” provides the\nrules for Short and Long Rests.\n\n\n\nHit Points you have when uninjured. Your current\nHit Points can be any number from that maximum\ndown to 0, which is the lowest Hit Points can go.\nWhenever you take damage, subtract it from your\nHit Points. Hit Point loss has no effect on your capabilities until you reach 0 Hit Points.\nIf you have half your Hit Points or fewer, you’re\nBloodied, which has no game effect on its own but\nwhich might trigger other game effects.\n\nDamage Rolls\n\nEach weapon, spell, and damaging monster ability\nspecifies the damage it deals. You roll the damage\ndice, add any modifiers, and deal the damage to\nyour target. If there’s a penalty to the damage, it’s\npossible to deal 0 damage but not negative damage.\nWhen attacking with a weapon, you add your ability modifier—the same modifier used for the attack\nroll—to the damage roll. A spell tells you which dice\nto roll for damage and whether to add any modifiers. Unless a rule says otherwise, you don’t add\nyour ability modifier to a fixed damage amount that\ndoesn’t use a roll, such as the damage of a Blowgun.\nSee “Equipment” for weapons’ damage dice and\n“Spells” for spells’ damage dice.\n\nCritical Hits\n\nWhen you score a Critical Hit, you deal extra damage. Roll the attack’s damage dice twice, add them\ntogether, and add any relevant modifiers as normal.\nFor example, if you score a Critical Hit with a Dagger, roll 2d4 for the damage rather than 1d4, and\nadd your relevant ability modifier. If the attack involves other damage dice, such as from the Rogue’s\nSneak Attack feature, you also roll those dice twice.\n\nSaving Throws and Damage\n\nDamage dealt via saving throws uses these rules.\n\nDamage against Multiple Targets\n\nWhen you create a damaging effect that forces two\nor more targets to make saving throws against it at\nthe same time, roll the damage once for all the targets. For example, when a wizard casts Fireball, the\nspell’s damage is rolled once for all creatures caught\nin the blast.\n\nHalf Damage\n\nMany saving throw effects deal half damage (round\ndown) to a target when the target succeeds on the\nsaving throw. The halved damage is equal to half\nthe damage that would be dealt on a failed save.\n\nDamage Types\n\nEach instance of damage has a type, like Fire\nor Slashing. Damage types are listed in “Rules\n\nGlossary” and have no rules of their own, but other\nrules, such as Resistance, rely on damage types."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

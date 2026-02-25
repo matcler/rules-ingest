@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_2_jack_of_all_trades|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 32,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_2_jack_of_all_trades"
+  },
+  "text": {
+    "raw": "Level 2: Jack of All Trades\n\nYou can add half your Proficiency Bonus (round\ndown) to any ability check you make that uses a\nskill proficiency you lack and that doesn’t otherwise\nuse your Proficiency Bonus.\nFor example, if you make a Strength (Athletics)\ncheck and lack Athletics proficiency, you can add\nhalf your Proficiency Bonus to the check."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

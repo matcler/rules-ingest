@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_circle_of_the_land_level_6_natural_recovery|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_circle_of_the_land_level_6_natural_recovery"
+  },
+  "text": {
+    "raw": "Level 6: Natural Recovery\n\nYou can cast one of the level 1+ spells that you have\nprepared from your Circle Spells feature without\nexpending a spell slot, and you must finish a Long\nRest before you do so again.\nIn addition, when you finish a Short Rest, you can\nchoose expended spell slots to recover. The spell\nslots can have a combined level that is equal to or\nless than half your Druid level (round up), and none\nof them can be level 6+. For example, if you’re a level\n6 Druid, you can recover up to three levels’ worth of\nspell slots. You can recover a level 3 spell slot, a level\n2 and a level 1 spell slot, or three level 1 spell slots.\nOnce you recover spell slots with this feature, you\ncan’t do so again until you finish a Long Rest."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

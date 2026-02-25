@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "totalCandidates": 11,
+    "candidatesWithAtoms": 0,
+    "candidatesZeroAtoms": 11,
+    "totalAtoms": 0
+  },
+  "atomTypesUsed": {},
+  "unrepresentableClasses": [
+    {
+      "classId": "UNREPRESENTABLE_WITH_MVP_ATOMS",
+      "count": 11,
+      "examples": [
+        "srd.spellcasting.attack_rolls",
+        "srd.spellcasting.casting_in_armor",
+        "srd.spellcasting.casting_spells"
+      ]
+    }
+  ],
+  "failures": []
+}

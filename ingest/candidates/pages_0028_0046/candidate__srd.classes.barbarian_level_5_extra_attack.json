@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_5_extra_attack|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_5_extra_attack"
+  },
+  "text": {
+    "raw": "Level 5: Extra Attack\n\nYou can attack twice instead of once whenever you\ntake the Attack action on your turn."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

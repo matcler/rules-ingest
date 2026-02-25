@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|marching_order|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 12,
+    "pageEnd": 12,
+    "ref": "srd.playing_the_game.marching_order"
+  },
+  "text": {
+    "raw": "Marching Order\n\nThe adventurers should establish a marching order\nwhile they travel, whether indoors or outdoors. A\nmarching order makes it easier to determine which\ncharacters are affected by traps, which ones can spot\nhidden enemies, and which ones are the closest to\nthose enemies if a fight breaks out. You can change\nyour marching order outside combat and record the\norder any way you like: write it down, for example,\nor arrange miniatures to show it."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

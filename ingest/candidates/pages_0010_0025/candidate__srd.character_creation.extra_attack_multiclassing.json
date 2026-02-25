@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|extra_attack_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.extra_attack_multiclassing"
+  },
+  "text": {
+    "raw": "Extra Attack\n\nIf you gain the Extra Attack feature from more than\none class, the features don’t stack. You can’t make\nmore than two attacks with this feature unless you\nhave a feature that says you can (such as the Fighter’s Two Extra Attacks feature).\nSimilarly, the Warlock’s Thirsting Blade invocation, which grants you the Extra Attack feature\nwith your pact weapon, doesn’t give you additional\nattacks if you also have Extra Attack."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

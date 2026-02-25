@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|hot_rule_10|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 14,
+    "pageEnd": 14,
+    "ref": "srd.playing_the_game.hot_rule_10"
+  },
+  "text": {
+    "raw": "On your turn, you can give yourself the Prone condition (see “Rules Glossary”) without using an action\nor any of your Speed, but you can’t do so if your\nSpeed is 0."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|targets|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 106,
+    "pageEnd": 106,
+    "ref": "srd.spellcasting.targets"
+  },
+  "text": {
+    "raw": "Targets\n\nA typical spell requires the caster to pick one or\nmore targets to be affected by the spell’s magic. A\nspell’s description says whether the spell targets\ncreatures, objects, or something else.\nA Clear Path to the Target. To target something\nwith a spell, a caster must have a clear path to it, so\nit can’t be behind Total Cover.\nTargeting Yourself. If a spell targets a creature\nof your choice, you can choose yourself unless the\ncreature must be Hostile or specifically a creature\nother than you.\nAreas of Effect. Some spells, such as Thunderwave, cover an area called an area of effect, which\nis defined in “Rules Glossary.” The area determines\nwhat the spell targets. The description of a spell\nspecifies whether it has an area of effect, which is\ntypically one of these shapes: Cone, Cube, Cylinder,\nEmanation, Line, or Sphere.\n\n\n\nAwareness of Being Targeted. Unless a spell has\na perceptible effect, a creature doesn’t know it was\ntargeted by the spell. An effect like lightning is obvious, but a more subtle effect, such as an attempt\nto read thoughts, goes unnoticed unless a spell’s\ndescription says otherwise.\nInvalid Targets. If you cast a spell on someone\nor something that can’t be affected by it, nothing\nhappens to that target, but if you used a spell slot to\ncast the spell, the slot is still expended.\nIf the spell normally has no effect on a target that\nsucceeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even\nthough it didn’t attempt one (giving no hint that the\ncreature is an invalid target). Otherwise, you perceive that the spell did nothing to the target."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

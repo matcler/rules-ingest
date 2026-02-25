@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|ability_scores_and_alignment|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 20,
+    "pageEnd": 21,
+    "ref": "srd.character_creation.ability_scores_and_alignment"
+  },
+  "text": {
+    "raw": "Step 3: Ability Scores\nTo determine your character’s ability scores, you\nfirst generate a set of six numbers using the instructions below and then assign them to your six abilities. “Playing the Game” explains what each ability\nmeans.\n\nGenerate Your Scores\nDetermine your ability scores by using one of the\nfollowing three methods. Your GM might prefer you\nto use a particular one.\nStandard Array. Use the following six scores for\nyour abilities: 15, 14, 13, 12, 10, 8.\nRandom Generation. Roll four d6s and record\nthe total of the highest three dice. Do this five more\ntimes, so you have six numbers.\nPoint Cost. You have 27 points to spend on your\nability scores. The cost of each score is shown on\nthe Ability Score Point Costs table. For example, a\nscore of 14 costs 7 of your 27 points.\n\nAbility Score Point Costs\n\nDetermine Ability Modifiers\n\nFinally, determine your ability modifiers using the\nAbility Scores and Modifiers table. Write the modifier next to each of your scores.\n\nAbility Scores and Modifiers\nScore\n\nModifier\n\nScore\n\nModifier\n\n\n−4\n\n12–13\n\n+1\n\n4–5\n\n−3\n\n14–15\n\n+2\n\n6–7\n\n−2\n\n16–17\n\n+3\n\n8–9\n\n−1\n\n18–19\n\n+4\n\n10–11\n\n+0\n\n\n+5\n\nScore\n\nCost\n\nScore\n\nCost\n\n\n\n\n\n\n\n\n\n\n\n\n\nStep 4: Alignment\n\n\n\n\n\nChoose your character’s alignment from the options\nbelow, and note it on your character sheet.\nThe game assumes that player characters aren’t of\nan evil alignment. Check with your GM before making an evil character.\n\nAssign Ability Scores\nOnce you’ve generated six scores, assign them to\nStrength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma, keeping in mind your class’s\nprimary ability. Fill in the ability modifiers as well.\nIf you’re using the Standard Array option, consult\nthe Standard Array by Class table for suggestions\non where to assign scores for your character’s class.\nThe table puts the highest scores in a class’s main\nabilities. If you used a different method to generate the scores, you may still use this table to guide\nwhere you place your highest and lowest scores.\n\nStandard Array by Class\nClass\n\nStr.\n\nDex. Con. Int.\n\nWis.\n\nCha.\n\nBarbarian\n\n\n\n\n\n\n\nBard\n\n\n\n\n\n\n\nCleric\n\n\n\n\n\n\n\nDruid\n\n\n\n\n\n\n\nFighter\n\n\n\n\n\n\n\nMonk\n\n\n\n\n\n\n\nPaladin\n\n\n\n\n\n\n\nRanger\n\n\n\n\n\n\n\nRogue\n\n\n\n\n\n\n\nSorcerer\n\n\n\n\n\n\n\nWarlock\n\n\n\n\n\n\n\nWizard\n\n\n\n\n\n\n\nAdjust Ability Scores\n\n\na different one by 1, or increase all three by 1. None\nof these increases can raise a score above 20.\nSome players like to increase their class’s primary\nability, while others prefer to increase a low score.\n\nAfter assigning your ability scores, adjust them according to your background. Your background lists\nthree abilities; increase one of those scores by 2 and"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

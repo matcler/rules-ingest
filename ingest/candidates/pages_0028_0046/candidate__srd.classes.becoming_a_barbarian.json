@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|becoming_a_barbarian|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 28,
+    "pageEnd": 28,
+    "ref": "srd.classes.becoming_a_barbarian"
+  },
+  "text": {
+    "raw": "Becoming a Barbarian …\nAs a Level 1 Character\n• Gain all the traits in the Core Barbarian Traits\ntable.\n\n• Gain the following traits from the Core Barbarian\nTraits table: Hit Point Die, proficiency with Martial weapons, and training with Shields.\n• Gain the Barbarian’s level 1 features, which are\nlisted in the Barbarian Features table."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

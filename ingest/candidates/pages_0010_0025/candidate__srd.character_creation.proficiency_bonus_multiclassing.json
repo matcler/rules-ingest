@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|proficiency_bonus_multiclassing|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 25,
+    "pageEnd": 25,
+    "ref": "srd.character_creation.proficiency_bonus_multiclassing"
+  },
+  "text": {
+    "raw": "Proficiency Bonus\n\nYour Proficiency Bonus is based on your total character level, not your level in a particular class, as\nshown in the Character Advancement table. For\nexample, if you are a level 3 Fighter / level 2 Rogue,\nyou have the Proficiency Bonus of a level 5 character, which is +3."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

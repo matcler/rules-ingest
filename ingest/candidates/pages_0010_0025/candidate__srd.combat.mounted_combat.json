@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|mounted_combat|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 16,
+    "ref": "srd.combat.mounted_combat"
+  },
+  "text": {
+    "raw": "Mounted Combat\n\nA willing creature that is at least one size larger\nthan a rider and that has an appropriate anatomy\ncan serve as a mount, using the following rules.\n\nMounting and Dismounting\n\nDuring your move, you can mount a creature that\nis within 5 feet of you or dismount. Doing so costs\nan amount of movement equal to half your Speed\n(round down). For example, if your Speed is 30 feet,\nyou spend 15 feet of movement to mount a horse.\n\nControlling a Mount\nYou can control a mount only if it has been trained\nto accept a rider. Domesticated horses, mules, and\nsimilar creatures have such training.\nThe Initiative of a controlled mount changes to\nmatch yours when you mount it. It moves on your\nturn as you direct it, and it has only three action options during that turn: Dash, Disengage, and Dodge.\nA controlled mount can move and act even on the\nturn that you mount it.\nIn contrast, an independent mount—one that lets\nyou ride but ignores your control—retains its place\nin the Initiative order and moves and acts as it likes.\n\nFalling Off\n\nIf an effect is about to move your mount against its\nwill while you’re on it, you must succeed on a DC 10\nDexterity saving throw or fall off, landing with the\nProne condition (see “Rules Glossary”) in an unoccupied space within 5 feet of the mount.\nWhile mounted, you must make the same save if\nyou’re knocked Prone or the mount is."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

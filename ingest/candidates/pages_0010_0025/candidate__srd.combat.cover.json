@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|cover|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.combat.cover"
+  },
+  "text": {
+    "raw": "Cover\n\nWalls, trees, creatures, and other obstacles can provide cover, making a target more difficult to harm.\nAs detailed in the Cover table, there are three degrees of cover, each of which gives a different benefit to a target.\nA target can benefit from cover only when an attack or other effect originates on the opposite side\nof the cover. If a target is behind multiple sources\nof cover, only the most protective degree of cover\napplies; the degrees aren’t added together. For example, if a target is behind a creature that gives Half\nCover and a tree trunk that gives Three-Quarters\nCover, the target has Three-Quarters Cover.\n\nCover\n\nDegree\n\nBenefit to Target Offered By …\n\nHalf\n\n+2 bonus to AC\nand Dexterity\nsaving throws\n\nAnother creature or\nan object that covers at\nleast half of the target\n\nThree+5 bonus to AC\nQuarters and Dexterity\nsaving throws\n\nAn object that covers at\nleast three-quarters of\nthe target\n\nTotal\n\nAn object that covers\nthe whole target\n\nCan’t be targeted\ndirectly"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

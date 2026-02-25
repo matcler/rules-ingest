@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_subclass_circle_of_the_land|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 46,
+    "pageEnd": 46,
+    "ref": "srd.classes.druid_subclass_circle_of_the_land"
+  },
+  "text": {
+    "raw": "Druid Subclass:\nCircle of the Land\nCelebrate Connection to the Natural World\nThe Circle of the Land comprises mystics and sages\nwho safeguard ancient knowledge and rites. These\nDruids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The\ncircle’s wisest members preside as the chief priests\nof their communities."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

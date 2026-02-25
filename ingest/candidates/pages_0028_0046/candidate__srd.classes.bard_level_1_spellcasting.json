@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_1_spellcasting|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 32,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_1_spellcasting"
+  },
+  "text": {
+    "raw": "Level 1: Spellcasting\n\nYou have learned to cast spells through your bardic\narts. See “Spells” for the rules on spellcasting. The\ninformation below details how you use those rules\nwith Bard spells, which appear in the Bard spell list\nlater in the class’s description.\nCantrips. You know two cantrips of your choice\nfrom the Bard spell list. Dancing Lights and Vicious\nMockery are recommended.\nWhenever you gain a Bard level, you can replace\none of your cantrips with another cantrip of your\nchoice from the Bard spell list.\nWhen you reach Bard levels 4 and 10, you learn\nanother cantrip of your choice from the Bard spell\nlist, as shown in the Cantrips column of the Bard\nFeatures table.\nSpell Slots. The Bard Features table shows how\nmany spell slots you have to cast your level 1+\nspells. You regain all expended slots when you finish a Long Rest.\nPrepared Spells of Level 1+. You prepare the\nlist of level 1+ spells that are available for you to\ncast with this feature. To start, choose four level 1\nspells from the Bard spell list. Charm Person, Color\nSpray, Dissonant Whispers, and Healing Word are\nrecommended.\nThe number of spells on your list increases as you\ngain Bard levels, as shown in the Prepared Spells\ncolumn of the Bard Features table. Whenever that\nnumber increases, choose additional spells from the\nBard spell list until the number of spells on your list\nmatches the number on the table. The chosen spells\nmust be of a level for which you have spell slots.\nFor example, if you’re a level 3 Bard, your list of\n\n\n\nprepared spells can include six spells of levels 1 and\n2 in any combination.\nIf another Bard feature gives you spells that you\nalways have prepared, those spells don’t count\nagainst the number of spells you can prepare with\nthis feature, but those spells otherwise count as\nBard spells for you.\nChanging Your Prepared Spells. Whenever you\ngain a Bard level, you can replace one spell on your\nlist with another Bard spell for which you have spell\nslots.\nSpellcasting Ability. Charisma is your spellcasting ability for your Bard spells.\nSpellcasting Focus. You can use a Musical Instrument as a Spellcasting Focus for your Bard spells."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

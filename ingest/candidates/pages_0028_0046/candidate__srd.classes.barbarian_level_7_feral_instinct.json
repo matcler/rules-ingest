@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_7_feral_instinct|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 29,
+    "pageEnd": 29,
+    "ref": "srd.classes.barbarian_level_7_feral_instinct"
+  },
+  "text": {
+    "raw": "Level 7: Feral Instinct\n\nYour instincts are so honed that you have Advantage on Initiative rolls."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

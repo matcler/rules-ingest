@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|note_armor_training|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 19,
+    "pageEnd": 19,
+    "ref": "srd.character_creation.note_armor_training"
+  },
+  "text": {
+    "raw": "Note Armor Training\n\nYour class might give you training with certain\ncategories of armor. Note your armor training on\nyour character sheet. Armor training with a kind of\narmor means you can wear that armor effectively,\ngaining defensive bonuses from it. The categories of\narmor are described in “Equipment.”"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

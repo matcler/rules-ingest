@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_1_druidic|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 42,
+    "pageEnd": 42,
+    "ref": "srd.classes.druid_level_1_druidic"
+  },
+  "text": {
+    "raw": "Level 1: Druidic\n\nYou know Druidic, the secret language of Druids.\nWhile learning this ancient tongue, you also unlocked the magic of communicating with animals;\nyou always have the Speak with Animals spell\nprepared.\nYou can use Druidic to leave hidden messages. You\nand others who know Druidic automatically spot\nsuch a message. Others spot the message’s presence\n\n\n\nwith a successful DC 15 Intelligence (Investigation)\ncheck but can’t decipher it without magic."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

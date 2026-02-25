@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_level_11_relentless_rage|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_level_11_relentless_rage"
+  },
+  "text": {
+    "raw": "Level 11: Relentless Rage\n\nYour Rage can keep you fighting despite grievous\nwounds. If you drop to 0 Hit Points while your Rage\nis active and don’t die outright, you can make a DC\n10 Constitution saving throw. If you succeed, your\nHit Points instead change to a number equal to\ntwice your Barbarian level.\nEach time you use this feature after the first, the\nDC increases by 5. When you finish a Short or Long\nRest, the DC resets to 10."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_class_features_intro|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 28,
+    "pageEnd": 28,
+    "ref": "srd.classes.barbarian_class_features_intro"
+  },
+  "text": {
+    "raw": "Barbarian Class Features\n\nAs a Barbarian, you gain the following class features\nwhen you reach the specified Barbarian levels.\nThese features are listed in the Barbarian Features\ntable."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

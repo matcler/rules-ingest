@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|one_thing_at_a_time|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 10,
+    "pageEnd": 10,
+    "ref": "srd.playing_the_game.one_thing_at_a_time"
+  },
+  "text": {
+    "raw": "One Thing at a Time\n\nThe game uses actions to govern how much you can\ndo at one time. You can take only one action at a\ntime. This principle is most important in combat, as\nexplained in “Combat” later in “Playing the Game.”\nActions can come up in other situations, too: in a\nsocial interaction, you can try to Influence a creature or use the Search action to read the creature’s\nbody language, but you can’t do both at the same\ntime. And when you’re exploring a dungeon, you\ncan’t simultaneously use the Search action to look\nfor traps and use the Help action to aid another\ncharacter who’s trying to open a stuck door (with\nthe Utilize action)."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

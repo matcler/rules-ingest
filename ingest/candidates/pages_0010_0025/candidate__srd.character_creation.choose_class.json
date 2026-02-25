@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|choose_class|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 19,
+    "pageEnd": 19,
+    "ref": "srd.character_creation.choose_class"
+  },
+  "text": {
+    "raw": "Step 1: Choose Class\n\nChoose a class, and write it on your character sheet.\nThe Class Overview table summarizes the classes.\nSee “Classes” for the classes’ details.\n\nClass Overview\nClass\n\n\nLikes ...\n\nPrimary\nAbility\n\nComplexity\n\nBarbarian Battle\n\nStrength\n\nAverage\n\nBard\n\nPerforming\n\nCharisma\n\nHigh\n\nCleric\n\nGods\n\nWisdom\n\nAverage\n\nDruid\n\nNature\n\nWisdom\n\nHigh\n\nFighter\n\nWeapons\n\nStrength\nor Dexterity\n\nLow\n\nMonk\n\nUnarmed\ncombat\n\nDexterity\nand Wisdom\n\nHigh\n\nPaladin\n\nDefense\n\nStrength\nAverage\nand Charisma\n\nRanger\n\nSurvival\n\nDexterity\nand Wisdom\n\n\nAverage\n\nClass\n\nLikes ...\n\nPrimary\nAbility\n\nComplexity\n\nRogue\n\nStealth\n\nDexterity\n\nLow\n\nSorcerer\n\nPower\n\nCharisma\n\nHigh\n\nWrite Your Level\nWrite your character’s level on your character\nsheet. Typically, a character starts at level 1 and\nadvances in level by adventuring and gaining Experience Points (XP).\nWrite Your XP. Also record your Experience\nPoints. A level 1 character has 0 XP.\nStarting at a Higher Level. Your GM might start\nyou at a higher level. If you start at level 3 or higher,\nwrite your chosen subclass on your character sheet.\nSee the “Starting at Higher Levels” section later in\n“Character Creation” for more information."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_4_ability_score_improvement|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_4_ability_score_improvement"
+  },
+  "text": {
+    "raw": "Level 4: Ability Score Improvement\n\nYou gain the Ability Score Improvement feat (see\n“Feats”) or another feat of your choice for which you\nqualify. You gain this feature again at Druid levels 8,\n12, and 16."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

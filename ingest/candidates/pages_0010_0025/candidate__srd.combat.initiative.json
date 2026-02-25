@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|initiative|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 13,
+    "pageEnd": 13,
+    "ref": "srd.combat.initiative"
+  },
+  "text": {
+    "raw": "Initiative\n\nInitiative determines the order of turns during\ncombat. When combat starts, every participant\nrolls Initiative; they make a Dexterity check that\ndetermines their place in the Initiative order. The\nGM rolls for monsters. For a group of identical creatures, the GM makes a single roll, so each member of\nthe group has the same Initiative.\nSurprise. If a combatant is surprised by combat\nstarting, that combatant has Disadvantage on their\nInitiative roll. For example, if an ambusher starts\ncombat while hidden from a foe who is unaware\nthat combat is starting, that foe is surprised.\nInitiative Order. A combatant’s check total is\ncalled their Initiative count, or Initiative for short.\nThe GM ranks the combatants, from highest to\nlowest Initiative. This is the order in which they act\nduring each round. The Initiative order remains the\nsame from round to round.\nTies. If a tie occurs, the GM decides the order\namong tied monsters, and the players decide the\norder among tied characters. The GM decides the\n\n\n\norder if the tie is between a monster and a player\ncharacter."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

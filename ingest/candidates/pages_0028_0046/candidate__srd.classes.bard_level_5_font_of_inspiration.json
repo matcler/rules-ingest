@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_5_font_of_inspiration|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 32,
+    "pageEnd": 32,
+    "ref": "srd.classes.bard_level_5_font_of_inspiration"
+  },
+  "text": {
+    "raw": "Level 5: Font of Inspiration\n\nYou now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.\nIn addition, you can expend a spell slot (no action\nrequired) to regain one expended use of Bardic\nInspiration."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

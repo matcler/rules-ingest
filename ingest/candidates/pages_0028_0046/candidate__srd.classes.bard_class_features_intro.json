@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_class_features_intro|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 31,
+    "pageEnd": 31,
+    "ref": "srd.classes.bard_class_features_intro"
+  },
+  "text": {
+    "raw": "Bard Class Features\n\nAs a Bard, you gain the following class features\nwhen you reach the specified Bard levels. These features are listed in the Bard Features table."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

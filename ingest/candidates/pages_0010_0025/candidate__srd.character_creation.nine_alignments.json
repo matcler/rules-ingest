@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|character_creation|nine_alignments|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 21,
+    "pageEnd": 22,
+    "ref": "srd.character_creation.nine_alignments"
+  },
+  "text": {
+    "raw": "The Nine Alignments\n\nA creature’s alignment broadly describes its ethical\nattitudes and ideals. Alignment is a combination of\ntwo factors: one identifies morality (good, evil, or\nneutral), and the other describes attitudes toward\norder (lawful, chaotic, or neutral).\nThe summaries of the alignments below describe\nthe typical behavior of a creature with that alignment; individuals can vary from that behavior.\nLawful Good (LG). Lawful Good creatures endeavor to do the right thing as expected by society.\nSomeone who fights injustice and protects the innocent without hesitation is probably Lawful Good.\nNeutral Good (NG). Neutral Good creatures do the\nbest they can, working within rules but not feeling\nbound by them. A kindly person who helps others\naccording to their needs is probably Neutral Good.\nChaotic Good (CG). Chaotic Good creatures act as\ntheir conscience directs with little regard for what\nothers expect. A rebel who waylays a cruel baron’s\ntax collectors and uses the stolen money to help the\npoor is probably Chaotic Good.\nLawful Neutral (LN). Lawful Neutral individuals\nact in accordance with law, tradition, or personal\ncodes. Someone who follows a disciplined rule of\nlife—and isn’t swayed either by the demands of\nthose in need or by the temptations of evil—is probably Lawful Neutral.\nNeutral (N). Neutral is the alignment of those who\nprefer to avoid moral questions and don’t take sides,\n\nUnaligned Creatures\nMost creatures that lack the capacity for rational\nthought don’t have alignments; they are unaligned.\nSharks are savage predators, for example, but they\naren’t evil; they are unaligned.\n\ndoing what seems best at the time. Someone who’s\nbored by moral debate is probably Neutral.\nChaotic Neutral (CN). Chaotic Neutral creatures\nfollow their whims, valuing their personal freedom\nabove all else. A scoundrel who wanders the land\nliving by their wits is probably Chaotic Neutral.\nLawful Evil (LE). Lawful Evil creatures methodically take what they want within the limits of a code\nof tradition, loyalty, or order. An aristocrat exploiting citizens while scheming for power is probably\nLawful Evil.\nNeutral Evil (NE). Neutral Evil is the alignment of\nthose who are untroubled by the harm they cause as\nthey pursue their desires. A criminal who robs and\nmurders as they please is probably Neutral Evil.\nChaotic Evil (CE). Chaotic Evil creatures act\nwith arbitrary violence, spurred by their hatred or\nbloodlust. A villain pursuing schemes of vengeance\nand havoc is probably Chaotic Evil."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|immunity|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 17,
+    "pageEnd": 17,
+    "ref": "srd.combat.immunity"
+  },
+  "text": {
+    "raw": "Immunity\n\nSome creatures and objects have Immunity to certain damage types and conditions. Immunity to a\ndamage type means you don’t take damage of that\ntype, and Immunity to a condition means you aren’t\naffected by it."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

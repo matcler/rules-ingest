@@ -1,0 +1,31 @@
+{
+  "kind": "atoms",
+  "scenario": "SCENARIO_2",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.combat.attack_structure.choose_target"
+  },
+  "atoms": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "srd.combat.attack_structure.choose_target.requires_target",
+      "pack": "SRD_COMBAT",
+      "source": {
+        "pageStart": 15,
+        "pageEnd": 15,
+        "ref": "srd.combat.attack_structure.choose_target"
+      },
+      "atomType": "REQUIRES_TARGET",
+      "appliesTo": {
+        "eventType": "ACTION_PROPOSED",
+        "actionType": "ATTACK"
+      },
+      "enforcement": {
+        "denyCode": "INVALID_MOVE",
+        "detailsReason": "REQUIRES_TARGET",
+        "ifDataMissing": "DENY"
+      }
+    }
+  ]
+}

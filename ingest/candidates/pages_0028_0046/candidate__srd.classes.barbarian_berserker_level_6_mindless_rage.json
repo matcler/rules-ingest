@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_berserker_level_6_mindless_rage|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 30,
+    "pageEnd": 30,
+    "ref": "srd.classes.barbarian_berserker_level_6_mindless_rage"
+  },
+  "text": {
+    "raw": "Level 6: Mindless Rage\n\nYou have Immunity to the Charmed and Frightened conditions while your Rage is active. If you’re\nCharmed or Frightened when you enter your Rage,\nthe condition ends on you."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

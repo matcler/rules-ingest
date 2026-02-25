@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_class_features_intro|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 41,
+    "pageEnd": 41,
+    "ref": "srd.classes.druid_class_features_intro"
+  },
+  "text": {
+    "raw": "Druid Class Features\n\nAs a Druid, you gain the following class features\nwhen you reach the specified Druid levels. These\nfeatures are listed in the Druid Features table."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

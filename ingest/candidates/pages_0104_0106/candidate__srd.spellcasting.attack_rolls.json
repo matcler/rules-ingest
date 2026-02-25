@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|spellcasting|attack_rolls|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 106,
+    "pageEnd": 106,
+    "ref": "srd.spellcasting.attack_rolls"
+  },
+  "text": {
+    "raw": "Attack Rolls\nSome spells require the caster to make an attack\nroll to determine whether the spell hits a target.\nHere’s how to calculate the attack modifier for your\nspells:\nSpell attack modifier = your spellcasting ability\nmodifier + your Proficiency Bonus"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

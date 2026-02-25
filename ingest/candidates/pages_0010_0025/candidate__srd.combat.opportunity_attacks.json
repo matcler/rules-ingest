@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|combat|opportunity_attacks|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 15,
+    "pageEnd": 15,
+    "ref": "srd.combat.opportunity_attacks"
+  },
+  "text": {
+    "raw": "Opportunity Attacks\n\nCombatants watch for enemies to drop their guard.\nIf you move heedlessly past your foes, you put yourself in danger by provoking an Opportunity Attack.\nAvoiding Opportunity Attacks. You can avoid\nprovoking an Opportunity Attack by taking the\nDisengage action. You also don’t provoke an Opportunity Attack when you Teleport or when you are\nmoved without using your movement, action, Bonus\nAction, or Reaction. For example, you don’t provoke\nan Opportunity Attack if an explosion hurls you out\nof a foe’s reach or if you fall past an enemy.\nMaking an Opportunity Attack. You can make an\nOpportunity Attack when a creature that you can\nsee leaves your reach. To make the attack, take a Reaction to make one melee attack with a weapon or\nan Unarmed Strike against that creature. The attack\noccurs right before it leaves your reach."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

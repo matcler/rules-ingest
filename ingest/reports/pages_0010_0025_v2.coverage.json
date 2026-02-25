@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "totalCandidates": 14,
+    "candidatesWithAtoms": 1,
+    "candidatesZeroAtoms": 13,
+    "totalAtoms": 1
+  },
+  "atomTypesUsed": {
+    "REQUIRES_TARGET": 1
+  },
+  "unrepresentableClasses": [
+    {
+      "classId": "UNREPRESENTABLE_WITH_MVP_ATOMS",
+      "count": 13,
+      "examples": [
+        "srd.playing_the_game.hot_rule_01",
+        "srd.playing_the_game.hot_rule_02",
+        "srd.playing_the_game.hot_rule_03"
+      ]
+    }
+  ],
+  "failures": []
+}

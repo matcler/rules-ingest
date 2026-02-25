@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|playing_the_game|reactions|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 10,
+    "pageEnd": 10,
+    "ref": "srd.playing_the_game.reactions"
+  },
+  "text": {
+    "raw": "Reactions\n\nCertain special abilities, spells, and situations allow you to take a special action called a Reaction. A\nReaction is an instant response to a trigger of some\nkind, which can occur on your turn or on someone\nelse’s. The Opportunity Attack, described later in\n“Playing the Game,” is the most common type of\nReaction.\nWhen you take a Reaction, you can’t take another\none until the start of your next turn. If the reaction\ninterrupts another creature’s turn, that creature\ncan continue its turn right after the Reaction.\nIn terms of timing, a Reaction takes place immediately after its trigger unless the Reaction’s description says otherwise."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

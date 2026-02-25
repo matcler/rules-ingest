@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "totalCandidates": 51,
+    "candidatesWithAtoms": 1,
+    "candidatesZeroAtoms": 50,
+    "totalAtoms": 1
+  },
+  "atomTypesUsed": {
+    "REQUIRES_TARGET": 1
+  },
+  "unrepresentableClasses": [
+    {
+      "classId": "UNREPRESENTABLE_WITH_MVP_ATOMS",
+      "count": 50,
+      "examples": [
+        "srd.character_creation.ability_scores_and_alignment",
+        "srd.character_creation.armor_class_multiclassing",
+        "srd.character_creation.character_creation_details"
+      ]
+    }
+  ],
+  "failures": []
+}

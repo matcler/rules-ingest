@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|barbarian_multiclass_traits|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 28,
+    "pageEnd": 28,
+    "ref": "srd.classes.barbarian_multiclass_traits"
+  },
+  "text": {
+    "raw": "As a Multiclass Character\n\nBarbarian\nCore Barbarian Traits\nPrimary Ability\n\nStrength\n\nHit Point Die\n\nD12 per Barbarian level\n\nSaving Throw\nProficiencies\n\nStrength and Constitution\n\nSkill Proficiencies\n\nChoose 2: Animal Handling,\nAthletics, Intimidation, Nature, Perception, or Survival\n\nWeapon Proficiencies Simple and Martial weapons\nArmor Training\n\nLight and Medium armor and\nShields\n\nStarting Equipment\n\nChoose A or B: (A) Greataxe,\n4 Handaxes, Explorer’s Pack,\nand 15 GP; or (B) 75 GP"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

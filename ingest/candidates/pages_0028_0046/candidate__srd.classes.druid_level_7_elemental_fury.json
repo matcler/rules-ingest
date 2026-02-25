@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|druid_level_7_elemental_fury|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 43,
+    "pageEnd": 43,
+    "ref": "srd.classes.druid_level_7_elemental_fury"
+  },
+  "text": {
+    "raw": "Level 7: Elemental Fury\n\nThe might of the elements flows through you. You\ngain one of the following options of your choice.\nPotent Spellcasting. Add your Wisdom modifier\nto the damage you deal with any Druid cantrip.\nPrimal Strike. Once on each of your turns when\nyou hit a creature with an attack roll using a\nweapon or a Beast form’s attack in Wild Shape, you\ncan cause the target to take an extra 1d8 Cold, Fire,\nLightning, or Thunder damage (choose when you\nhit)."
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

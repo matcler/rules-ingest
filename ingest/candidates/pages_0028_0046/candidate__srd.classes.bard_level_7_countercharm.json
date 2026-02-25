@@ -1,0 +1,17 @@
+{
+  "kind": "candidate",
+  "schemaVersion": "v1",
+  "candidateId": "SRD_5_2_1_EN|classes|bard_level_7_countercharm|v1",
+  "docId": "SRD_5_2_1_EN",
+  "source": {
+    "pageStart": 33,
+    "pageEnd": 33,
+    "ref": "srd.classes.bard_level_7_countercharm"
+  },
+  "text": {
+    "raw": "Level 7: Countercharm\nYou can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature\nwithin 30 feet of you fails a saving throw against an\neffect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to\nbe rerolled, and the new roll has Advantage.\n\nLevel 10: Magical Secrets\n\nSchool\n\nTransmutation\n\nSpecial\n\n—\n\nStarry Wisp\n\nEvocation\n\n—\n\nTrue Strike\n\nDivination\n\n—\n\nVicious Mockery\n\nEnchantment\n\n—\n\nLevel 1 Bard Spells\nSpell\n\nSchool\n\nAnimal Friendship\n\nEnchantment\n\n—\n\nBane\n\nEnchantment\n\nC\n\nCharm Person\n\nEnchantment\n\n—\n\nColor Spray\n\nIllusion\n\n—\n\nCommand\n\nEnchantment\n\n—\n\nComprehend Languages\n\nDivination\n\nR\n\nCure Wounds\n\nAbjuration\n\n—\n\nDetect Magic\n\nDivination\n\nC, R\n\nDisguise Self\n\nIllusion\n\n—\n\nDissonant Whispers\n\nEnchantment\n\n—\n\nFaerie Fire\n\nEvocation\n\nC\n\nFeather Fall\n\nTransmutation\n\n—\n\nHealing Word\n\nAbjuration\n\n—\n\nHeroism\n\nEnchantment\n\nC\n\nHideous Laughter\n\nEnchantment\n\nC"
+  },
+  "metadata": {
+    "scenario": "SCENARIO_2"
+  }
+}

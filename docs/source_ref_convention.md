@@ -69,3 +69,11 @@ Example:
 - `id: srd.combat.melee_attack`
 - `source.corpus: SRD_5E_5.2.1_EN`
 - `source.ref: combat.melee_attack`
+
+## Governance note
+
+`source.ref` only identifies the SRD anchor.
+
+It does not decide whether a file is source tracked, intermediate, canonical, or distributable.
+
+Canonical dataset membership is declared explicitly in `dataset_baseline.json` and documented in `docs/dataset_governance.md`.

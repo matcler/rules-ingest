@@ -1,0 +1,125 @@
+{
+  "baselineName": "combat-mvp-minimal-v1",
+  "schemas": {
+    "structured": "schemas/structured.schema.json",
+    "atoms": "schemas/atoms.schema.json"
+  },
+  "repositoryConstraints": [
+    "data_only_and_opt_in",
+    "no_automatic_sss_backend_integration",
+    "no_automatic_rule_engine_backend_integration",
+    "no_gameplay_logic",
+    "no_rule_engine_contract_mutation",
+    "no_runtime_side_effects",
+    "no_improper_cross_repo_coupling"
+  ],
+  "pathClasses": {
+    "source_tracked": [
+      "asset/pdfs/ENG-SRD_CC_v5.2.1.pdf",
+      "ingest/text/",
+      "ingest/candidates/"
+    ],
+    "intermediate_generated": [
+      "extraction/structured/",
+      "ingest/reports/",
+      "ingest/atoms/pages_0010_0025.atoms.json",
+      "ingest/atoms/pages_0010_0025_v2.atoms.json",
+      "ingest/atoms/pages_0028_0046.atoms.json",
+      "ingest/atoms/pages_0104_0106.atoms.json",
+      "ingest/atoms/poison_spray.variant_A.atoms.json"
+    ],
+    "canonical_dataset": [
+      "ingest/atoms/combat.mvp.atoms.json"
+    ],
+    "distributable_artifact": [
+      "dist/atoms.bundle.json",
+      "dist/atoms.index.json"
+    ]
+  },
+  "baseline": {
+    "structuredFixtures": [
+      {
+        "path": "extraction/structured/srd.spell.ray_of_frost.json",
+        "expectedId": "srd.spell.ray_of_frost",
+        "expectedKind": "spell",
+        "expectedPack": "SRD_SPELLS",
+        "expectedConstraintTypes": [
+          "requires_action_cost",
+          "requires_target",
+          "requires_range_max"
+        ]
+      }
+    ],
+    "canonicalAtomsBundles": [
+      {
+        "path": "ingest/atoms/combat.mvp.atoms.json",
+        "scenario": "SCENARIO_2",
+        "expectedAtomIds": [
+          "srd.combat.requires_combat_active",
+          "srd.combat.requires_your_turn",
+          "srd.combat.requires_initiative_set",
+          "srd.combat.requires_phase_action",
+          "srd.combat.requires_target",
+          "srd.combat.requires_adjacent_target"
+        ],
+        "expectedAtomTypes": [
+          "REQUIRES_COMBAT_ACTIVE",
+          "REQUIRES_YOUR_TURN",
+          "REQUIRES_INITIATIVE_SET",
+          "REQUIRES_PHASE",
+          "REQUIRES_TARGET",
+          "REQUIRES_ADJACENT_TARGET"
+        ]
+      }
+    ],
+    "distributableArtifacts": {
+      "bundle": {
+        "path": "dist/atoms.bundle.json",
+        "scenario": "SCENARIO_2",
+        "derivedFrom": [
+          "ingest/atoms/combat.mvp.atoms.json"
+        ],
+        "expectedAtomIds": [
+          "srd.combat.requires_combat_active",
+          "srd.combat.requires_your_turn",
+          "srd.combat.requires_initiative_set",
+          "srd.combat.requires_phase_action",
+          "srd.combat.requires_target",
+          "srd.combat.requires_adjacent_target"
+        ]
+      },
+      "index": {
+        "path": "dist/atoms.index.json",
+        "expectedEntries": [
+          {
+            "scenario": "SCENARIO_2",
+            "eventType": "ACTION_PROPOSED",
+            "actionType": null,
+            "atomIds": [
+              "srd.combat.requires_combat_active",
+              "srd.combat.requires_your_turn",
+              "srd.combat.requires_initiative_set",
+              "srd.combat.requires_phase_action"
+            ]
+          },
+          {
+            "scenario": "SCENARIO_2",
+            "eventType": "ACTION_PROPOSED",
+            "actionType": "ATTACK",
+            "atomIds": [
+              "srd.combat.requires_target",
+              "srd.combat.requires_adjacent_target"
+            ]
+          }
+        ]
+      }
+    },
+    "invariants": [
+      "canonical_dataset_lives_in_ingest_and_is_minimal",
+      "structured_fixture_pins_structured_schema_shape",
+      "artifact_bundle_is_derived_from_canonical_dataset",
+      "artifact_index_matches_bundle_grouping",
+      "baseline_remains_data_only_and_opt_in"
+    ]
+  }
+}

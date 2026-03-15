@@ -115,6 +115,45 @@ Useful focused checks:
 .venv/bin/python tools/validate_json.py --rules
 ```
 
+## Canonical Baseline Gate
+
+Local command to run before push:
+
+```bash
+make gate-baseline
+```
+
+This gate always runs the same mandatory sequence:
+
+- resolve the Python interpreter as `.venv/bin/python` when present, otherwise `python3`
+- `<python> -m py_compile tools/validate_json.py`
+- `<python> tools/validate_json.py --baseline`
+- `<python> tools/validate_json.py --atoms ingest/atoms/combat.mvp.atoms.json dist`
+- `<python> tools/validate_json.py --rules`
+
+What it protects:
+
+- the declared minimal baseline in [dataset_baseline.json](/home/matte/dev/rules-ingest/dataset_baseline.json)
+- the canonical dataset `ingest/atoms/combat.mvp.atoms.json`
+- distributable coherence for `dist/atoms.bundle.json` and `dist/atoms.index.json`
+- atoms registry and schema coverage for the canonical atom types
+
+CI runs the same path through `make gate-baseline-ci` in the `Dataset Baseline Gate` workflow.
+
+Optional repo-local pre-push hook setup:
+
+```bash
+make install-hooks
+```
+
+This sets `core.hooksPath=.githooks` and runs `make gate-baseline` on `git push`.
+
+Out of scope:
+
+- runtime invocation from `sss-backend`
+- gameplay logic
+- automatic coupling to any other repository
+
 ## Governance Reference
 
 See [docs/dataset_governance.md](/home/matte/dev/rules-ingest/docs/dataset_governance.md) for the human-readable policy and [dataset_baseline.json](/home/matte/dev/rules-ingest/dataset_baseline.json) for the repeatable baseline contract used by `tools/validate_json.py --baseline`.

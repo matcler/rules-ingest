@@ -23,6 +23,10 @@ def load_json(path: Path) -> object:
     return json.loads(load_text(path))
 
 
+def normalize_repo_rel_path(path_text: str) -> str:
+    return Path(path_text).as_posix().lstrip("./")
+
+
 def build_registry(repo_root: Path) -> Registry:
     """Build a registry from all schemas in ./schemas so $id references can resolve."""
     schemas_dir = repo_root / "schemas"
@@ -279,18 +283,18 @@ def validate_atoms_data(
 
 def load_atoms_registry_types(repo_root: Path) -> Dict[str, Any]:
     atoms_registry_path = repo_root / "atoms_registry.json"
-    atoms_registry_types: Dict[str, Any] = {}
-
     if not atoms_registry_path.exists():
-        return atoms_registry_types
+        raise FileNotFoundError(f"Atoms registry not found: {atoms_registry_path}")
 
     atoms_registry = load_json(atoms_registry_path)
-    if isinstance(atoms_registry, dict):
-        atom_types = atoms_registry.get("atomTypes", {})
-        if isinstance(atom_types, dict):
-            atoms_registry_types = atom_types  # type: ignore[assignment]
+    if not isinstance(atoms_registry, dict):
+        raise TypeError(f"Atoms registry '{atoms_registry_path}' must be a JSON object.")
 
-    return atoms_registry_types
+    atom_types = atoms_registry.get("atomTypes", {})
+    if not isinstance(atom_types, dict) or not atom_types:
+        raise TypeError(f"Atoms registry '{atoms_registry_path}' must declare a non-empty atomTypes object.")
+
+    return atom_types  # type: ignore[return-value]
 
 
 def normalize_json_value(value: Any) -> str:
@@ -509,18 +513,40 @@ def validate_baseline(
         errors.append(f"[ERROR] Baseline manifest '{manifest_path}': missing pathClasses object")
         return errors
 
+    normalized_path_classes: Dict[str, List[str]] = {}
     required_classes = [
         "source_tracked",
         "intermediate_generated",
         "canonical_dataset",
         "distributable_artifact",
     ]
+    seen_paths: Dict[str, str] = {}
     for class_name in required_classes:
         entries = path_classes.get(class_name)
         if not isinstance(entries, list) or not entries:
             errors.append(
                 f"[ERROR] Baseline manifest '{manifest_path}': pathClasses.{class_name} must be a non-empty array"
             )
+            continue
+
+        normalized_entries: List[str] = []
+        for entry in entries:
+            if not isinstance(entry, str) or not entry.strip():
+                errors.append(
+                    f"[ERROR] Baseline manifest '{manifest_path}': pathClasses.{class_name} entries must be non-empty strings"
+                )
+                continue
+            normalized_entry = normalize_repo_rel_path(entry)
+            normalized_entries.append(normalized_entry)
+            previous_class = seen_paths.get(normalized_entry)
+            if previous_class is not None:
+                errors.append(
+                    f"[ERROR] Baseline manifest '{manifest_path}': path '{normalized_entry}' appears in both {previous_class} and {class_name}"
+                )
+            else:
+                seen_paths[normalized_entry] = class_name
+
+        normalized_path_classes[class_name] = normalized_entries
 
     schemas = manifest.get("schemas")
     if not isinstance(schemas, dict):
@@ -573,11 +599,20 @@ def validate_baseline(
         )
         return errors
 
+    canonical_bundle_paths: List[str] = []
+    canonical_expected_atom_types: List[str] = []
     canonical_bundle_data: List[Dict[str, Any]] = []
     for spec in canonical_specs:
         if not isinstance(spec, dict) or not isinstance(spec.get("path"), str):
             errors.append("[ERROR] baseline.canonicalAtomsBundles entries must be objects with a path")
             continue
+
+        canonical_bundle_paths.append(normalize_repo_rel_path(spec["path"]))
+        expected_atom_types = spec.get("expectedAtomTypes")
+        if isinstance(expected_atom_types, list):
+            canonical_expected_atom_types.extend(
+                [entry for entry in expected_atom_types if isinstance(entry, str)]
+            )
 
         bundle_path = repo_root / spec["path"]
         if not bundle_path.exists():
@@ -608,6 +643,68 @@ def validate_baseline(
     if not isinstance(index_spec, dict) or not isinstance(index_spec.get("path"), str):
         errors.append("[ERROR] baseline.distributableArtifacts.index must be an object with a path")
         return errors
+
+    canonical_class_paths = sorted(normalized_path_classes.get("canonical_dataset", []))
+    if sorted(canonical_bundle_paths) != canonical_class_paths:
+        errors.append(
+            f"[ERROR] Baseline manifest '{manifest_path}': pathClasses.canonical_dataset must exactly match baseline.canonicalAtomsBundles paths"
+        )
+
+    distributable_paths = sorted(
+        [
+            normalize_repo_rel_path(bundle_spec["path"]),
+            normalize_repo_rel_path(index_spec["path"]),
+        ]
+    )
+    if distributable_paths != sorted(normalized_path_classes.get("distributable_artifact", [])):
+        errors.append(
+            f"[ERROR] Baseline manifest '{manifest_path}': pathClasses.distributable_artifact must exactly match distributable artifact paths"
+        )
+
+    derived_from = bundle_spec.get("derivedFrom")
+    if not isinstance(derived_from, list) or sorted(
+        [normalize_repo_rel_path(entry) for entry in derived_from if isinstance(entry, str)]
+    ) != sorted(canonical_bundle_paths):
+        errors.append(
+            f"[ERROR] Baseline manifest '{manifest_path}': distributableArtifacts.bundle.derivedFrom must exactly match baseline.canonicalAtomsBundles paths"
+        )
+
+    atoms_schema_path = repo_root / atoms_schema_rel
+    try:
+        atoms_schema_doc = load_json(atoms_schema_path)
+    except Exception as ex:
+        errors.append(f"[ERROR] Failed to parse atoms schema '{atoms_schema_path}': {ex}")
+        atoms_schema_doc = None
+
+    schema_atom_types: List[str] = []
+    if isinstance(atoms_schema_doc, dict):
+        properties = atoms_schema_doc.get("properties")
+        atom_type_prop = properties.get("atomType") if isinstance(properties, dict) else None
+        enum_values = atom_type_prop.get("enum") if isinstance(atom_type_prop, dict) else None
+        if not isinstance(enum_values, list) or not enum_values:
+            errors.append(f"[ERROR] Atoms schema '{atoms_schema_path}' must declare atomType.enum")
+        else:
+            schema_atom_types = [entry for entry in enum_values if isinstance(entry, str)]
+
+    schema_atom_type_set = set(schema_atom_types)
+    registry_atom_type_set = set(atoms_registry_types.keys())
+    missing_in_schema = sorted(registry_atom_type_set - schema_atom_type_set)
+    if missing_in_schema:
+        errors.append(
+            f"[ERROR] Atoms registry contains atom types not declared in schemas/atoms.schema.json: {missing_in_schema}"
+        )
+
+    expected_atom_type_set = set(canonical_expected_atom_types)
+    missing_in_registry = sorted(expected_atom_type_set - registry_atom_type_set)
+    if missing_in_registry:
+        errors.append(
+            f"[ERROR] Canonical baseline expectedAtomTypes are missing from atoms_registry.json: {missing_in_registry}"
+        )
+    missing_expected_in_schema = sorted(expected_atom_type_set - schema_atom_type_set)
+    if missing_expected_in_schema:
+        errors.append(
+            f"[ERROR] Canonical baseline expectedAtomTypes are missing from schemas/atoms.schema.json: {missing_expected_in_schema}"
+        )
 
     bundle_path = repo_root / bundle_spec["path"]
     if not bundle_path.exists():

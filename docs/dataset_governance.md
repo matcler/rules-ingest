@@ -67,8 +67,39 @@ The baseline is intentionally narrow. It exists to keep one minimal dataset stab
 - `ingest/atoms/combat.mvp.atoms.json` is the source-of-truth dataset for the current baseline.
 - `dist/atoms.bundle.json` must remain a derived copy of the canonical baseline atoms.
 - `dist/atoms.index.json` must remain consistent with `dist/atoms.bundle.json`.
+- `pathClasses.canonical_dataset` must exactly match `baseline.canonicalAtomsBundles`.
+- `pathClasses.distributable_artifact` must exactly match `baseline.distributableArtifacts`.
+- `distributableArtifacts.bundle.derivedFrom` must point only to the declared canonical dataset paths.
+- canonical atom types must remain covered by both `atoms_registry.json` and `schemas/atoms.schema.json`.
 - The structured fixture is only a schema guardrail. It is not a runtime dataset and not an integration contract.
 - Everything in this repository remains opt-in. Nothing here is imported automatically by runtime repos.
+
+## Canonical Gate
+
+Canonical local pre-push path:
+
+```bash
+make gate-baseline
+```
+
+Canonical CI path:
+
+```bash
+make gate-baseline-ci
+```
+
+Both paths execute the same essential verification sequence and fail loudly if:
+
+- `dataset_baseline.json` declares inconsistent canonical paths
+- `dist/` diverges from the canonical minimal dataset
+- canonical atom types drift out of registry/schema coverage
+- rules/schema validation or baseline validation is skipped from the gate path
+
+Optional repo-local hook installation:
+
+```bash
+make install-hooks
+```
 
 ## Onboarding
 
